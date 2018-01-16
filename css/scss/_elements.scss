@@ -1,0 +1,106 @@
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+body {
+	background: white;
+}
+
+blockquote {
+	font-family: 'Playfair Display';
+	font-size: 18px;
+	font-style: italic;
+	width: 100%;
+	margin: 0.25em 0;
+	padding: 0.25em 40px;
+	line-height: 1.625;
+	position: relative;
+	color: $grey-9b;
+}
+
+blockquote:before {
+	display: block;
+	content: "\f10d";
+	font-family: 'FontAwesome';
+	font-size: 30px;
+	position: absolute;
+	left: 0;
+	top: -10px;
+	opacity: 0.6;
+}
+
+blockquote cite {
+	color: $grey-dc;
+	font-size: 14px;
+	display: block;
+	margin-top: 5px;
+}
+
+blockquote cite:before {
+	content: "\2014 \2009";
+}
+
+hr {
+	background: $grey-dc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: bottom;
+}
+
+img.img-resp,
+img.wp-post-image,
+img.attachment-thumbnail,
+img.attachment-medium,
+img.attachment-large,
+img.attachment-full {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+.spacer {
+	margin-bottom: 30px;
+}
+
+.aperto {
+	position: relative;
+}

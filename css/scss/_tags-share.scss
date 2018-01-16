@@ -1,0 +1,84 @@
+/**
+ * Tags & share.
+ */
+.edit-link {
+	display: block;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin: 10px 0;
+}
+.edit-link a:before {
+	content: '\f044';
+	font-family: 'FontAwesome';
+	margin-right: 5px;
+}
+.entry-footer {
+	margin: 30px 0 0;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+.tags-links a {
+	background: white;
+	color: $grey-73;
+	display: inline-block;
+	margin-bottom: 2px;
+	margin-right: 5px;
+	margin-top: 2px;
+	padding: 0 10px;
+	text-decoration: none;
+	border: 1px solid $grey-dc;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+.tags-links a:hover,
+.tags-links a:focus {
+	opacity: 0.6;
+}
+.post-social {
+	display: none;
+	float: right;
+	font-size: 14px;
+	margin-bottom: 0;
+	margin-right: 5px;
+	margin-top: 2px;
+}
+.post-social-wrapper {
+	display: inline-block;
+	float: right;
+}
+
+.post-social-title {
+	cursor: pointer;
+	float: right;
+	line-height: 28px;
+	margin-right: 0;
+}
+.post-social-title a {
+	color: $grey-73;
+	text-decoration: none;
+}
+.post-social-title i {
+	color: $grey-73;
+	font-weight: normal;
+	margin-right: 9px;
+}
+.post-social a {
+	color: $grey-73;
+	display: inline-block;
+	font-size: 16px;
+	height: 16px;
+	line-height: 16px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-top: 0;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	width: 16px;
+}
+.post-social a:hover {
+	opacity: 0.6;
+}
+.post-social span {
+	display: none;
+}

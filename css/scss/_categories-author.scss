@@ -1,0 +1,51 @@
+
+/**
+ * Categories & author.
+ */
+.txakolina-cat-aut-wrapper {
+	position: relative;
+	background: none;
+}
+.has-post-thumbnail .txakolina-cat-aut-wrapper {
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.4) 100%);
+	background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.4) 100%);
+}
+.txakolina-cat-aut {
+	position: relative;
+	color: $grey-20;
+	font-size: 13px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	width:auto;
+	height:auto;
+	top:0;
+	left:0;
+}
+.has-post-thumbnail .txakolina-cat-aut {
+	position: absolute;
+	padding: 0 30px;
+	top:auto;
+	bottom:30px;
+	left:0;
+}
+.txakolina-cat-aut a {
+	color: $grey-20;
+	font-weight: 600;
+}
+
+.has-post-thumbnail .txakolina-cat-aut,
+.has-post-thumbnail .txakolina-cat-aut a {
+	color: white;
+}
+.txakolina-cat-aut .cat-links-wrap {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: $alert-red;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+}

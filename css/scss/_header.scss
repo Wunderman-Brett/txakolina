@@ -1,0 +1,92 @@
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
+	background: white;
+	height: 90px;
+	width:100%;
+	padding: 0 115px;
+	top:0;
+	left: 0;
+	z-index: 9999;
+	&.affix + .site-content {
+		padding-top: 90px;
+	}
+}
+@media (max-width: 1199px) {
+	.site-header {
+		height: 70px;
+		padding: 0 35px;
+	}
+}
+@media (max-width: 767px) {
+	.site-header {
+		position: relative;
+		padding: 0;
+		height: auto;
+	}
+}
+.admin-bar .site-header {
+	top: 32px;
+}
+@media (max-width: 600px) {
+	.admin-bar .site-header {
+		//top: 0;
+	}
+}
+.site-title {
+	color: $grey-20;
+	font-family: 'Playfair Display', serif;
+	font-size: 32px;
+	font-weight: 400;
+	font-style: italic;
+	line-height: 90px;
+	margin: 0;
+	padding: 0;
+}
+@media (max-width: 1199px) {
+	.site-title {
+		font-size: 28px;
+		line-height: 70px;
+	}
+}
+@media (max-width: 767px) {
+	.site-title {
+		line-height: 50px;
+		padding-top: 40px;
+		text-align: center;
+	}
+}
+.site-title a {
+	color: $grey-20;
+	text-decoration: none;
+}
+.site-title a:hover {
+	opacity: 0.6;
+}
+
+.site-description {
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	margin:0;
+	font-size: 26px;
+	// text-align: center;
+	// text-transform: uppercase;
+	// letter-spacing: 6px;
+	// padding:20px 40px;
+	// border:1px solid white;
+	font-weight: 600;
+	max-width: 70%;
+	word-wrap: break-word;
+	z-index: 1000;
+}
+@media (max-width: 1199px) {
+	.site-description {
+		font-size: 22px;
+		padding:17px 34px;
+	}
+}

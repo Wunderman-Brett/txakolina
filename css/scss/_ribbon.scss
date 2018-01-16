@@ -1,0 +1,38 @@
+
+/**
+ * Featured ribbon.
+ */
+	.featured {
+		position: relative;
+	}
+
+.txakolina-ribbon-simple {
+	color: $alert-red;
+	font-family: 'Playfair Display';
+	font-style: italic;
+	text-transform: capitalize;
+	float:right;
+}
+.txakolina-ribbon-wrapper {
+	height: 130px;
+	right: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 130px;
+	z-index: 1;
+}
+.txakolina-ribbon {
+	background: $alert-red;
+	color: white;
+	font-family: 'Playfair Display';
+	font-style: italic;
+	right: -100px;
+	padding: 15px;
+	position: absolute;
+	text-align: center;
+	top: 10px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	width: 270px;
+}

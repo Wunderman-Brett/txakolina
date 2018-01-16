@@ -1,0 +1,116 @@
+
+/**
+ * Loader
+ */
+#loader {
+	display:block
+}
+#loader,
+#loader:before {
+	border:3px solid transparent
+}
+#loader-wrapper .loader-section {
+	background:white;
+	height:100%;
+	position:fixed;
+	top:0;
+	width:51%;
+	z-index:1000;
+	-webkit-transform:translateX(0);
+	-ms-transform:translateX(0);
+	transform:translateX(0)
+}
+#loader-wrapper .loader-section.section-left {
+	left:0
+}
+#loader-wrapper .loader-section.section-right {
+	right:0
+}
+#loader-wrapper {
+	height:100%;
+	left:0;
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:10000
+}
+#loader {
+	border-radius:50%;
+	border-top-color:white;
+	height:150px;
+	left:50%;
+	margin:-75px 0 0 -75px;
+	position:relative;
+	top:50%;
+	width:150px;
+	z-index:1001;
+	-webkit-animation:spin 1s linear infinite;
+	animation:spin 1s linear infinite
+}
+#loader:after,
+#loader:before {
+	content:'';
+	position:absolute
+}
+#loader:after {
+	border:1px solid transparent;
+	border-radius:50%;
+	border-top-color:$alert-red;
+	bottom:15px;
+	left:15px;
+	right:15px;
+	top:15px;
+	-webkit-animation:spin 1.5s linear infinite;
+	animation:spin 1.5s linear infinite
+}
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform:rotate(0);
+		-ms-transform:rotate(0);
+		transform:rotate(0)
+	}
+	100% {
+		-webkit-transform:rotate(360deg);
+		-ms-transform:rotate(360deg);
+		transform:rotate(360deg)
+	}
+}
+@keyframes spin {
+	0% {
+		-webkit-transform:rotate(0);
+		-ms-transform:rotate(0);
+		transform:rotate(0)
+	}
+	100% {
+		-webkit-transform:rotate(360deg);
+		-ms-transform:rotate(360deg);
+		transform:rotate(360deg)
+	}
+}
+.loaded #loader-wrapper .loader-section.section-left {
+	-webkit-transform:translateX(-100%);
+	-ms-transform:translateX(-100%);
+	transform:translateX(-100%);
+	-webkit-transition:all .7s .3s cubic-bezier(.645,.045,.355,1);
+	transition:all .7s .3s cubic-bezier(.645,.045,.355,1)
+}
+.loaded #loader-wrapper .loader-section.section-right {
+	-webkit-transform:translateX(100%);
+	-ms-transform:translateX(100%);
+	transform:translateX(100%);
+	-webkit-transition:all .7s .3s cubic-bezier(.645,.045,.355,1);
+	transition:all .7s .3s cubic-bezier(.645,.045,.355,1)
+}
+.loaded #loader {
+	opacity:0;
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out
+}
+.loaded #loader-wrapper {
+	visibility:hidden;
+	-webkit-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	transform:translateY(-100%);
+	-webkit-transition:all .3s 1s ease-out;
+	transition:all .3s 1s ease-out
+}

@@ -1,0 +1,57 @@
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.txakolina-insta-ok #content {
+	margin-bottom: 480px;
+}
+
+#colophon {
+	z-index: 0;
+	background: $grey-20;
+	color: $grey-9b;
+}
+.txakolina-insta-ok #colophon {
+	height: 480px;
+}
+
+.txakolina-instagram-title {
+	color: white;
+	text-align:center;
+	font-style:italic;
+	display: block;
+	height: 70px;
+	line-height: 60px;
+	background: $grey-20;
+	margin: 0;
+}
+.txakolina-instagram-wrapper {
+	padding: 0;
+}
+
+.il-photo__img {
+	display: block;
+	width: auto;
+	height: 280px;
+}
+
+.site-info {
+	text-align: center;
+	font-size: small;
+	height: 120px;
+	padding-top: 50px;
+}
+@media (max-width: 767px) {
+	.site-info {
+		padding-top: 40px;
+	}
+}
+.site-info a {
+	color: $grey-dc;
+}
+.site-info a:hover {
+	opacity: 0.6;
+}
+#cuore {
+	color: $alert-red;
+}

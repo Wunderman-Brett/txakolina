@@ -1,0 +1,31 @@
+@font-face {
+	// Light
+  font-family: 'HelveticaNeue';
+  src: url('./fonts/45Ligh/88fcd49a-13c7-4d0c-86b1-ad1e258bd75d.eot?');
+  src: url('./fonts/45Ligh/88fcd49a-13c7-4d0c-86b1-ad1e258bd75d.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/45Ligh/9a2e4855-380f-477f-950e-d98e8db54eac.woff?') format('woff'),
+    url('./fonts/45Ligh/fa82d0ee-4fbd-4cc9-bf9f-226ad1fcbae2.ttf?') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+	// Bold Extended
+  font-family: 'HelveticaNeue';
+  src: url('./fonts/BdExt/852a14d9-aa7e-4222-b856-e8e8f5b00d8a.eot?');
+  src: url('./fonts/BdExt/852a14d9-aa7e-4222-b856-e8e8f5b00d8a.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/BdExt/56a53244-36b5-4359-b7da-f683600a21e7.woff?') format('woff'),
+    url('./fonts/BdExt/459148c5-040c-4b87-9fdc-3822a5a16194.ttf?') format('truetype');
+  font-weight: 700;
+  font-stretch: expanded;
+}
+
+@font-face {
+	// Light Extended
+  font-family: 'HelveticaNeue';
+  src: url('./fonts/LtExt/06a8efd8-00e4-4135-8633-e4b2676651a9.eot?');
+  src: url('./fonts/LtExt/06a8efd8-00e4-4135-8633-e4b2676651a9.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/LtExt/9cfb0a83-d4a9-428e-a01e-92e075d6742a.woff?') format('woff'),
+    url('./fonts/LtExt/e36aa928-d6dc-47ab-b497-f1e3d0abe18a.ttf?') format('truetype');
+  font-weight: 300;
+  font-stretch: expanded;
+}

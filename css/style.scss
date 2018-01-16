@@ -1,0 +1,65 @@
+ /*!
+ Theme Name: txakolina
+ Author: Pasquale Bucci
+ Description: Elegant and clean, txakolina is a theme designed to display your special day with stunning beauty. With a fashionable clean look, txakolina is a wedding theme that takes just minutes to setup. The theme fits for Engagement, Wedding Event, Wedding Planner, Video Maker, Wedding Photography, Flower Designer and any kind of Wedding Industries and activities.
+ Version: 1.0.4
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain: txakolina
+ */
+
+@import "variables";
+
+@import "scss/font-face";
+
+@import "scss/vendor/bootstrap";
+
+@import "scss/vendor/nanoscroller";
+
+@import "scss/vendor/slick";
+
+@import "scss/vendor/swipebox";
+
+// @import "scss/typography";
+
+@import "scss/elements";
+
+@import "scss/forms";
+
+@import "scss/links";
+
+@import "scss/menus";
+
+@import "scss/accessibility";
+
+@import "scss/alignments";
+
+@import "scss/widgets";
+
+@import "scss/pages-posts";
+
+@import "scss/categories-author";
+
+@import "scss/tags-share";
+
+@import "scss/not-found";
+
+@import "scss/post-formats";
+
+@import "scss/comments";
+
+@import "scss/ribbon";
+
+@import "scss/header";
+
+@import "scss/slider";
+
+@import "scss/search";
+
+@import "scss/loader";
+
+@import "scss/animate";
+
+@import "scss/infinite-scroll";
+
+@import "scss/media";

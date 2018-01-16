@@ -1,0 +1,43 @@
+
+/*--------------------------------------------------------------
+## Post Formats
+--------------------------------------------------------------*/
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+.txakolina-post-format-wrapper {
+	position: absolute;
+	top:10px;
+	left:10px;
+	z-index: 1001;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: $alert-red;
+	cursor: default;
+}
+.txakolina-post-format {
+	line-height: 30px;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+
+iframe[src*="mixcloud"] {
+	max-height: 120px;
+	max-width: 100%;
+	width: 100%;
+	margin: 0;
+}
+iframe[src*="soundcloud"] {
+	max-height: 240px;
+	max-width: 100%;
+	width: 100%;
+	margin: 0;
+}
+.gallery-caption {
+	display: none;
+}
