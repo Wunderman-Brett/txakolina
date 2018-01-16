@@ -163,3 +163,19 @@ require get_template_directory() . '/inc/jetpack.php';
  * Custom extra functions theme.
  */
 require get_template_directory() . '/inc/txakolina-extras.php';
+
+
+
+// PLUGIN UPDATE CHECKER
+require 'inc/plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4p3_Factory::buildUpdateChecker(
+		'https://github.com/fresenius-dux/txakolina',
+		__FILE__,
+		'txakolina'
+);
+
+//Optional: If you're using a private repository, specify the access token like this:
+$myUpdateChecker->setAuthentication('7ede950e6268eeb025f95b726489c9ee41fd8c08');
+
+//Optional: Set the branch that contains the stable release.
+// $myUpdateChecker->setBranch('stable-branch-name');
