@@ -38,14 +38,14 @@
     </div>
     <?php } ?>
 
-    <div id="overlay"></div>
+    <div id="overlay" class=""></div>
 
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'txakolina' ); ?></a>
 
     <!-- This is the Nano mmenu that slides in
     We're using it to show a full menu with child elements -->
-    <nav id="site-navigation" class="main-navigation" role="navigation">
-        <div class="close-menu">&#x2715;</div>
+    <nav id="site-navigation" class="site-navigation" role="navigation">
+        <div class="site-navigation-close">&#x2715;</div>
     		<div class="nano">
             <div class="nano-content">
                 <?php wp_nav_menu(

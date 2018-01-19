@@ -6,7 +6,6 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	background: $alert-red;
 	border: none;
 	border-radius: 0;
 	box-shadow: none;
@@ -26,16 +25,6 @@ input[type="submit"] {
 	transition: all 0.25s;
 }
 
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-	background: $alert-red;
-}
 
 input[type=tel],
 input[type=url],
