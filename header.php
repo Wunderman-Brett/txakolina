@@ -22,13 +22,13 @@
 
 <body <?php body_class(); ?>>
     <div id="loader-wrapper">
-		<div id="loader"></div>
-		<div class="loader-section section-left"></div>
+  		<div id="loader"></div>
+		  <div class="loader-section section-left"></div>
      	<div class="loader-section section-right"></div>
     </div>
 
-    <div id="overlay"></div>
-    
+
+
     <?php if ( is_front_page() && ! is_paged() ) { ?>
     <div id="home-slider">
     			<?php txakolina_slider_from_header() ?>
@@ -38,52 +38,64 @@
     </div>
     <?php } ?>
 
+    <div id="overlay"></div>
+
+    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'txakolina' ); ?></a>
+
+    <!-- This is the Nano mmenu that slides in
+    We're using it to show a full menu with child elements -->
     <nav id="site-navigation" class="main-navigation" role="navigation">
-        <div class="close-menu">
-            <i class="fa fa-times"></i>
-        </div>
-		<div class="nano">
+        <div class="close-menu">&#x2715;</div>
+    		<div class="nano">
             <div class="nano-content">
-                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'nav-menu' ) ); ?>
+                <?php wp_nav_menu(
+                  array(
+                    'theme_location' => 'nano',
+                    'menu_id' => 'nano-menu',
+                    'menu_class' => 'nano-menu'
+                    // 'walker' => new wp_bootstrap_navwalker()
+                  )
+                ); ?>
             </div><!-- .nano-content -->
         </div><!-- .nano -->
-
     </nav><!-- #site-navigation -->
 
-    <div id="txakolina-search-window" class="txakolina-search">
+    <div id="txakolina-search-window" class="txakolina-search-window search-closed">
         <div class="close-search">
             <i class="fa fa-times"></i>
         </div>
-
         <?php get_search_form(); ?>
-        <div class="txakolina-hint"><?php esc_html_e( 'Press enter to search', 'txakolina' ); ?></div>
     </div>
 
     <div id="page" class="hfeed site">
 
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'txakolina' ); ?></a>
+    	<header id="masthead" class="site-header" role="banner">
+        <div class="container">
+          <div class="row">
+            <div class="site-branding col-sm-2 ">
+              <?php if (has_custom_logo()) {
+                the_custom_logo();
+              } ?>
+        		</div><!-- .site-branding -->
 
-	<header id="masthead" class="site-header" role="banner">
+            <div class="col-sm-9">
+              <?php wp_nav_menu( array(
+                'theme_location' => 'primary',
+                'menu_id' => 'navbar-menu',
+                'menu_class' => 'navbar-menu'
+              ) ); ?>
+            </div>
 
-        <div class="site-branding col-sm-8 col-xs-12">
-			<?php if ( is_front_page() && is_home() && ! get_theme_mod( 'txakolina_logo' ) ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php elseif ( ! get_theme_mod( 'txakolina_logo' ) ) : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php else : ?>
-				<img class="txakolina-logo" src="<?php echo get_theme_mod( 'txakolina_logo' ); ?>" alt="<?php echo get_bloginfo('name'); ?>">
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-        <div class="col-sm-4 col-xs-12">
-            <div class="icon-bar-wrapper">
+            <div class="col-sm-1">
+              <div class="icon-bar-wrapper">
                 <a id="txakolina-search" href="#">
-                    <i class="fa fa-search"></i>
+                  <i class="fa fa-search"></i>
                 </a>
                 <a id="txakolina-menu" href="#">
-                    <i class="fa fa-bars"></i>
+                  <i class="fa fa-bars"></i>
                 </a>
+              </div>
             </div>
+          </div>
         </div>
-
-	</header><!-- #masthead -->
+    	</header><!-- #masthead -->

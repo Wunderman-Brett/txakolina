@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<div id="content" class="site-content container-fluid">
+<div id="content" class="site-content container">
 
 <div class="row">
 	<div id="primary" class="content-area">

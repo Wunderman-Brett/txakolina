@@ -3,10 +3,9 @@
 # Header
 --------------------------------------------------------------*/
 .site-header {
-	background: white;
+	background-color: white;
 	height: 90px;
 	width:100%;
-	padding: 0 115px;
 	top:0;
 	left: 0;
 	z-index: 9999;
@@ -22,7 +21,6 @@
 }
 @media (max-width: 767px) {
 	.site-header {
-		position: relative;
 		padding: 0;
 		height: auto;
 	}
@@ -30,11 +28,7 @@
 .admin-bar .site-header {
 	top: 32px;
 }
-@media (max-width: 600px) {
-	.admin-bar .site-header {
-		//top: 0;
-	}
-}
+
 .site-title {
 	color: $grey-20;
 	font-family: 'Playfair Display', serif;
@@ -53,8 +47,8 @@
 }
 @media (max-width: 767px) {
 	.site-title {
-		line-height: 50px;
-		padding-top: 40px;
+		line-height: 30px;
+		padding-top: 25px;
 		text-align: center;
 	}
 }
@@ -88,5 +82,26 @@
 	.site-description {
 		font-size: 22px;
 		padding:17px 34px;
+	}
+}
+
+.icon-bar-wrapper {
+	float:right;
+}
+@media (max-width: 767px) {
+	.icon-bar-wrapper {
+		text-align: center;
+		float:none;
+		margin: 10px 0 20px;
+	}
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.custom-logo {
+	margin: 25px 0 11px;
+	&-link {
+
 	}
 }

@@ -11,8 +11,6 @@ a#txakolina-menu {
 	text-align: right;
 	font-size: 24px;
 	line-height: 90px;
-	color: $grey-20;
-	-webkit-transition: all 0.25s;
 	transition: all 0.25s;
 
 }
@@ -25,20 +23,15 @@ a#txakolina-menu {
 @media (max-width: 767px) {
 	#txakolina-search i,
 	#txakolina-menu i {
-	   margin: 0 6px;
+	  margin: 0 6px;
 		border: 1px solid $grey-20;
 		line-height: 50px;
 		width:50px;
-	height:50px;
+		height:50px;
 		text-align: center;
 	}
 }
 
-
-#txakolina-search i:hover,
-#txakolina-menu i:hover {
-	opacity: 0.6;
-}
 
 /**
  * Search
@@ -55,34 +48,13 @@ a#txakolina-menu {
 	color: $grey-73;
 	cursor: pointer;
 }
-.close-search i:hover {
-	opacity: 0.6;
-}
-.txakolina-search {
-	padding: 0 10%;
-	font-size: 13px;
-	text-transform: uppercase;
+
+.txakolina-search-window {
 	background: $grey-20;
-	position: fixed;
-	left:0px;
-	top:-400px;
-	display: block;
-	width: 100%;
-	height: 400px;
-	min-width: 100%;
-	z-index: 10001;
-	-webkit-transition: all 0.35s ease-in-out;
+	display: none;
 	transition: all 0.35s ease-in-out;
 }
-@media (max-width: 767px) {
-	.txakolina-search {
-		top:-250px;
-		height: 250px;
-	}
-}
-.search-open {
-	top: 0;
-}
+
 .txakolina-search input.search-submit {
 	display: none;
 }

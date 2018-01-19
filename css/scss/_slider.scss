@@ -34,13 +34,3 @@
 	position: fixed;
 	max-width: 100%;
 }
-.icon-bar-wrapper {
-	float:right;
-}
-@media (max-width: 767px) {
-	.icon-bar-wrapper {
-		text-align: center;
-		float:none;
-		margin: 40px 0;
-	}
-}

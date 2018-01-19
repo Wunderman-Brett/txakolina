@@ -16,30 +16,13 @@ if ( ! function_exists( 'txakolina_setup' ) ) :
 	 * as indicating support for post thumbnails.
 	 */
 	function txakolina_setup() {
-		/*
-		 * Make theme available for translation.
-		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on txakolina, use a find and replace
-		 * to change 'txakolina' to the name of your theme in all the template files.
-		 */
 		load_theme_textdomain( 'txakolina', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 
-		/*
-		 * Let WordPress manage the document title.
-		 * By adding theme support, we declare that this theme does not use a
-		 * hard-coded <title> tag in the document head, and expect WordPress to
-		 * provide it for us.
-		 */
 		add_theme_support( 'title-tag' );
 
-		/*
-		 * Enable support for Post Thumbnails on posts and pages.
-		 *
-		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-		 */
 		add_theme_support( 'post-thumbnails' );
 		set_post_thumbnail_size( 800, 500, array( 'center', 'top' ) );
 		add_image_size( 'txakolina-index-thumb', 390, 450, array( 'center', 'top' ) );
@@ -48,6 +31,7 @@ if ( ! function_exists( 'txakolina_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary Menu', 'txakolina' ),
+			'nano' => esc_html__( 'Nano Menu', 'txakolina' ),
 		) );
 
 		/*
@@ -72,11 +56,7 @@ if ( ! function_exists( 'txakolina_setup' ) ) :
 			'video',
 		) );
 
-		/**
-	* Set up the WordPress core custom header feature.
-	*
-	* @uses txakolina_header_style()
-	*/
+
 		add_theme_support( 'custom-header', apply_filters( 'txakolina_custom_header_args', array(
 			'default-text-color'     => 'ffffff',
 			'width'                  => 1600,
@@ -85,6 +65,12 @@ if ( ! function_exists( 'txakolina_setup' ) ) :
 			'wp-head-callback'       => 'txakolina_header_style',
 		) ) );
 
+		add_theme_support( 'custom-logo',
+			array(
+				'width' => 183,
+				'height' => 39
+			 )
+		);
 	}
 endif; // txakolina_setup.
 add_action( 'after_setup_theme', 'txakolina_setup' );
@@ -163,6 +149,10 @@ require get_template_directory() . '/inc/jetpack.php';
  * Custom extra functions theme.
  */
 require get_template_directory() . '/inc/txakolina-extras.php';
+
+// bootstrap menus
+// require get_template_directory() . '/inc/wp-bootstrap-navwalker.php';
+
 
 
 

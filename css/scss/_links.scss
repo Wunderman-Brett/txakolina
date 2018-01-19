@@ -2,16 +2,13 @@
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: $grey-9b;
 	text-decoration: none;
-	-webkit-transition: all 0.35s;
 	transition: all 0.35s;
 }
 
 a:hover,
 a:focus,
 a:active {
-	opacity: 0.6;
 	text-decoration: underline;
 }
 

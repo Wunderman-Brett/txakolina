@@ -27,25 +27,29 @@
 			arrows: false
 		} );
 
+		// Admin bar?
+		var adminHeight = $('#wpadminbar').height() || 0;
 		var heroHeight = $('.header-slider').height();
+		var headerHeight = $('#site-header').height() || 0;
+		var scrollPosition;
+
 		console.log(heroHeight);
+
+		$('.main-navigation').css('top', adminHeight);
+
 		if (heroHeight < $window.height()) {
 			scrollPosition = heroHeight;
 		} else {
 			scrollPosition = $window.height();
 		}
 		$('.site-description').css('top', scrollPosition / 2);
-		// var admin;
-    //
-		// // Admin bar?
-		// if ( $( 'body' ).hasClass( 'admin-bar' ) ) {
-		// 	admin = 32;
-		// } else {
-		// 	admin = 0;
-		// }
+
+		$('#txakolina-search-window').css('top', headerHeight);
+
+		$('#home-slider').css('top', adminHeight);
 
 		// allow space for the slider on the Front Page
-		$('.home #page').css('top', scrollPosition);
+		$('.home #page').css('margin-top', scrollPosition);
 
 
 		$('.site-header').affix({
@@ -76,7 +80,7 @@
 			var $this = $( this );
 			e.preventDefault();
 			$this.toggleClass( 'toggle-on' );
-			$this.next( '.children, .sub-menu' ).toggleClass( 'toggled-on' );
+			$this.next( '.sub-menu' ).slideToggle();
 			$this.attr( 'aria-expanded', $this.attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
 		} );
 
@@ -91,7 +95,7 @@
 		* Search & menu
 		*/
 		// Close menu.
-		$( '.close-menu i' ).on( 'click' ,function() {
+		$( '.close-menu' ).on( 'click' ,function() {
 			$( '#site-navigation' ).removeClass( 'menu-open' );
 			$( '#overlay' ).removeClass( 'overlay-open' );
 		} );
@@ -114,9 +118,10 @@
 		} );
 		// Open search.
 		$( '#txakolina-search' ).on( 'click', function() {
-			$( '#overlay' ).addClass( 'overlay-open' );
-			$( '#txakolina-search-window' ).addClass( 'search-open' );
-			$( '.txakolina-search input.search-field' ).focus();
+			// $('#txakolina-search-window').slideToggle();
+			// $( '#overlay' ).addClass( 'overlay-open' );
+			$( '#txakolina-search-window' ).toggleClass( 'search-closed' );
+			// $( '.txakolina-search input.search-field' ).focus();
 			return false;
 		} );
 

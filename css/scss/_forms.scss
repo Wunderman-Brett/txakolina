@@ -26,13 +26,6 @@ input[type="submit"] {
 	transition: all 0.25s;
 }
 
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-	opacity: 0.6;
-}
-
 button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
