@@ -2,106 +2,75 @@
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.site-header {
-	background-color: white;
-	height: 90px;
-	width:100%;
-	top:0;
-	left: 0;
-	z-index: 9999;
-	&.affix + .site-content {
-		padding-top: 90px;
+.site {
+	&-branding {
+		img {
+			width: 151px;
+		}
 	}
-}
-@media (max-width: 1199px) {
-	.site-header {
-		height: 70px;
-		padding: 0 35px;
+	&-header {
+		background-color: white;
+		height: 90px;
+		width:100%;
+		top:0;
+		left: 0;
+		z-index: 9999;
+		border-radius: 0;
+		&.affix + .site-content {
+			padding-top: 90px;
+		}
+		&-icons {
+			margin: 33px 0 0 15px;
+			a {
+				padding: 15px 0 15px 15px;
+				&:hover, &:active, &:focus {
+					text-decoration: none;
+				}
+			}
+		}
 	}
-}
-@media (max-width: 767px) {
-	.site-header {
+	&-title {
+		color: $grey-20;
+		font-family: 'Playfair Display', serif;
+		font-size: 32px;
+		font-weight: 400;
+		font-style: italic;
+		line-height: 90px;
+		margin: 0;
 		padding: 0;
-		height: auto;
+		a {
+			color: $grey-20;
+			text-decoration: none;
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+	}
+	&-description {
+		position: absolute;
+		left:50%;
+		top:50%;
+		transform: translate(-50%,-50%);
+		color: white;
+		margin:0;
+		font-size: 26px;
+		font-weight: 600;
+		max-width: 70%;
+		word-wrap: break-word;
+		z-index: 1000;
 	}
 }
-.admin-bar .site-header {
+.navbar {
+	&-brand {
+		padding-top: 20px;
+	}
+}
+.admin-bar .site-header.affix {
 	top: 32px;
 }
-
-.site-title {
-	color: $grey-20;
-	font-family: 'Playfair Display', serif;
-	font-size: 32px;
-	font-weight: 400;
-	font-style: italic;
-	line-height: 90px;
-	margin: 0;
-	padding: 0;
-}
-@media (max-width: 1199px) {
-	.site-title {
-		font-size: 28px;
-		line-height: 70px;
-	}
-}
-@media (max-width: 767px) {
-	.site-title {
-		line-height: 30px;
-		padding-top: 25px;
-		text-align: center;
-	}
-}
-.site-title a {
-	color: $grey-20;
-	text-decoration: none;
-}
-.site-title a:hover {
-	opacity: 0.6;
-}
-
-.site-description {
-	position: absolute;
-	left:50%;
-	top:50%;
-	transform: translate(-50%,-50%);
-	color: white;
-	margin:0;
-	font-size: 26px;
-	// text-align: center;
-	// text-transform: uppercase;
-	// letter-spacing: 6px;
-	// padding:20px 40px;
-	// border:1px solid white;
-	font-weight: 600;
-	max-width: 70%;
-	word-wrap: break-word;
-	z-index: 1000;
-}
-@media (max-width: 1199px) {
-	.site-description {
-		font-size: 22px;
-		padding:17px 34px;
-	}
-}
-
-.icon-bar-wrapper {
-	float:right;
-}
-@media (max-width: 767px) {
-	.icon-bar-wrapper {
-		text-align: center;
-		float:none;
-		margin: 10px 0 20px;
-	}
-}
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-.custom-logo {
-	margin: 25px 0 11px;
-	&-link {
-
+// 782px is a WordPress breakpoint for the height of the admin bar
+@media (max-width: 782px) {
+	.admin-bar .site-header.affix {
+		top: 46px;
 	}
 }

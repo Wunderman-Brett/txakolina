@@ -14,12 +14,7 @@
 	color: $grey-20;
 }
 .header-slider {
-	margin-bottom: 5%;
-}
-@media (max-width: 767px) {
-	.header-slider {
-	   margin-bottom: 50px;
-	}
+	margin-bottom: 0;
 }
 .header-slider:after {
 	background: rgba(0, 0, 0, 0.2);

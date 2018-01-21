@@ -30,10 +30,8 @@
 		// Admin bar?
 		var adminHeight = $('#wpadminbar').height() || 0;
 		var heroHeight = $('.header-slider').height();
-		var headerHeight = $('#site-header').height() || 0;
+		// var headerHeight = $('#site-header').height() || 0;
 		var scrollPosition;
-
-		console.log(heroHeight);
 
 		$('.site-navigation').css('top', adminHeight);
 
@@ -44,13 +42,12 @@
 		}
 		$('.site-description').css('top', scrollPosition / 2);
 
-		$('#txakolina-search-window').css('top', headerHeight);
+		// $('#txakolina-search').css('top', headerHeight);
 
 		$('#home-slider').css('top', adminHeight);
 
 		// allow space for the slider on the Front Page
 		$('.home #page').css('margin-top', scrollPosition);
-
 
 		$('.site-header').affix({
 			offset: {
@@ -94,12 +91,12 @@
 		/**
 		* Search & menu
 		*/
+
 		// Close menu.
 		$( '.site-navigation-close' ).on( 'click' ,function() {
 			$( '#site-navigation' ).removeClass( 'site-navigation-open' );
 			$( '#overlay' ).removeClass( 'overlay-open' );
 		} );
-
 
 		// Open menu.
 		$( '#txakolina-menu' ).on( 'click', function() {
@@ -109,24 +106,29 @@
 		} );
 
 		// Open search.
-		$( '#txakolina-search' ).on( 'click', function() {
-			// $('#txakolina-search-window').slideToggle();
-			// $( '#overlay' ).addClass( 'overlay-open' );
-			$( '#txakolina-search-window' ).toggleClass( 'search-closed' );
-			// $( '.txakolina-search input.search-field' ).focus();
+		$( '#txakolina-search-button' ).on( 'click', function() {
+			if ($window.width() > 992) {
+				if ($('.navbar-menu-container').hasClass('present')) {
+					$('.navbar-menu-container').removeClass('present').fadeOut(0, function() {
+						$('.txakolina-search').fadeIn('slow');
+						$('.txakolina-search-button').find('i.fa-search').removeClass('fa-search').addClass('fa-close');
+					});
+				} else {
+					$('.txakolina-search').fadeOut(0, function() {
+						$('.navbar-menu-container').fadeIn(1000).addClass('present');
+						$('.txakolina-search-button').find('i.fa-close').removeClass('fa-close').addClass('fa-search');
+					});
+				}
+			} else {
+				$('.txakolina-search').fadeToggle('fast');
+			}
 			return false;
-		} );
-
-		// Close search.
-		$( '.close-search i' ).on( 'click', function() {
-			$( '#txakolina-search-window' ).removeClass( 'search-open' );
-			$( '#overlay' ).removeClass( 'overlay-open' );
 		} );
 
 		// Close search & menu on overlay click.
 		$( '#overlay' ).on( 'click', function() {
 			$( '#site-navigation' ).removeClass( 'site-navigation-open' );
-			$( '#txakolina-search-window' ).removeClass( 'search-open' );
+			// $( '#txakolina-search' ).removeClass( 'search-open' );
 			$( '#overlay' ).removeClass( 'overlay-open' );
 		} );
 		/**

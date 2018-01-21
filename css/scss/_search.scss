@@ -1,100 +1,69 @@
+.txakolina-search {
+	height: 39px;
+	display: none;
+	form {
+		margin: 24px 0;
+		text-align: right;
+		opacity: inherit;
+		label {
+			font-weight: normal;
+			margin: 0;
+		}
+		input {
+			border: none;
+			background-color: #eee;
+			position: relative;
+			top: 0;
+			padding: 0 12px;
+			line-height: 39px;
+			height: 39px;
+			font-size: 18px;
+			display: inline-block;
+			&::-webkit-input-placeholder {
+				color: rgba(0,0,0,0);
+			}
+			&:-ms-input-placeholder {
+				color: rgba(0,0,0,0);
+			}
+			&[type='search'] {
+				width: 250px;
+			}
+			&[type='submit'] {
+				background-image: linear-gradient(#eee 0%, #ccc 100%);
+				color: $brand-primary;
+				text-transform: lowercase;
+				transition: all 1s ease-in-out;
+				&:hover {
+					background-image: linear-gradient(#ccc 0%, #eee 100%);
+				}
+			}
+		}
+	}
+	&-button {
+		text-decoration: none;
+	}
+}
 
-a#txakolina-search,
-a#txakolina-menu {
+#txakolina-menu {
 	text-decoration: none;
 }
-#txakolina-search i,
-#txakolina-menu i {
-	display: inline-block;
-	width:30px;
-	height:30px;
-	text-align: right;
-	font-size: 24px;
-	line-height: 90px;
-	transition: all 0.25s;
 
-}
-@media (max-width: 1199px) {
-	#txakolina-search i,
-	#txakolina-menu i {
-		line-height: 70px;
+@media (min-width: $screen-md) {
+	.txakolina-search {
+		input[type='search'] {
+			width: 400px;
+		}
 	}
 }
-@media (max-width: 767px) {
-	#txakolina-search i,
-	#txakolina-menu i {
-	  margin: 0 6px;
-		border: 1px solid $grey-20;
-		line-height: 50px;
-		width:50px;
-		height:50px;
-		text-align: center;
-	}
-}
-
 
 /**
  * Search
  */
 .close-search {
-	display: block;
-	height:auto;
-	width: 100%;
 	text-align: center;
 }
 .close-search i {
 	font-size: 24px;
-	line-height: 90px;
 	color: $grey-73;
 	cursor: pointer;
-}
-
-.txakolina-search-window {
-	background: $grey-20;
-	display: none;
-	transition: all 0.35s ease-in-out;
-}
-
-.txakolina-search input.search-submit {
-	display: none;
-}
-.txakolina-search input.search-field {
-	padding: 25px 0;
-	font-size: 120px;
-	background: transparent;
-	border: none;
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-bottom-color: $grey-73;
-	color: $grey-9b;
-	display: block;
-	height: auto;
-	margin: 0;
-}
-@media (max-width: 767px) {
-	.txakolina-search input.search-field {
-		padding: 15px 0;
-		font-size: 30px;
-	}
-}
-
-.txakolina-search input::-webkit-input-placeholder {
-	color:transparent;
-}
-.txakolina-search input::-moz-placeholder {
-	color:transparent;
-}
-.txakolina-hint {
-	margin-top: 15px;
-	clear: both;
-	color: $alert-red;
-	float: right;
-	font-size: 18px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-}
-@media (max-width: 767px) {
-	.txakolina-hint {
-		font-size: 13px;
-	}
 }

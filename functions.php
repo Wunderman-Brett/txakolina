@@ -116,7 +116,7 @@ function txakolina_scripts() {
 
 	// Load txakolina dependencies and custom js.
 	wp_enqueue_script( 'dependencies', get_template_directory_uri() . '/js/txakolina-dependencies-min.js', array( 'jquery' ), '1.0.0', true );
-	wp_enqueue_script( 'txakolina-js', get_template_directory_uri() . '/js/txakolina.js', array( 'jquery', 'dependencies' ), '1.0.0', true );
+	wp_enqueue_script( 'txakolina-js', get_template_directory_uri() . '/js/txakolina-min.js', array( 'jquery', 'dependencies' ), '1.0.0', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -169,3 +169,9 @@ $myUpdateChecker->setAuthentication('7ede950e6268eeb025f95b726489c9ee41fd8c08');
 
 //Optional: Set the branch that contains the stable release.
 // $myUpdateChecker->setBranch('stable-branch-name');
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page('Global Custom Fields');
+
+}

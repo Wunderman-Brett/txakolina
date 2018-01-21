@@ -60,42 +60,41 @@
         </div><!-- .nano -->
     </nav><!-- #site-navigation -->
 
-    <div id="txakolina-search-window" class="txakolina-search-window search-closed">
-        <div class="close-search">
-            <i class="fa fa-times"></i>
-        </div>
-        <?php get_search_form(); ?>
-    </div>
+
 
     <div id="page" class="hfeed site">
 
-    	<header id="masthead" class="site-header" role="banner">
+    	<header id="masthead" class="site-header navbar" role="banner">
         <div class="container">
-          <div class="row">
-            <div class="site-branding col-sm-2 ">
-              <?php if (has_custom_logo()) {
-                the_custom_logo();
-              } ?>
-        		</div><!-- .site-branding -->
+          <div class="site-branding navbar-header">
 
-            <div class="col-sm-9">
+            <a class="navbar-brand" href="<?php echo get_bloginfo('url'); ?>">
+              <img src="<?php the_field('site_logo', 'option'); ?>" alt="Fresenius North America">
+            </a>
+      		</div><!-- .site-branding -->
+
+          <div class="site-header-icons navbar-right">
+            <a id="txakolina-search-button" class="txakolina-search-button" href>
+              <i class="fa fa-lg fa-search"></i>
+            </a>
+            <a id="txakolina-menu" href>
+              <i class="fa fa-lg fa-bars"></i>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <div class="navbar-right hidden-xs hidden-sm">
               <?php wp_nav_menu( array(
                 'theme_location' => 'primary',
                 'menu_id' => 'navbar-menu',
-                'menu_class' => 'navbar-menu'
+                'container_class' => 'navbar-menu-container present '
               ) ); ?>
             </div>
-
-            <div class="col-sm-1">
-              <div class="icon-bar-wrapper">
-                <a id="txakolina-search" href="#">
-                  <i class="fa fa-search"></i>
-                </a>
-                <a id="txakolina-menu" href="#">
-                  <i class="fa fa-bars"></i>
-                </a>
+            <div class="navbar-right">
+              <div id="txakolina-search" class="txakolina-search">
+                  <?php get_search_form(); ?>
               </div>
             </div>
-          </div>
-        </div>
+
+          </div><!-- .navbar-collapse -->
+        </div><!-- .container -->
     	</header><!-- #masthead -->
