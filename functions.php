@@ -150,8 +150,8 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 require get_template_directory() . '/inc/txakolina-extras.php';
 
-// bootstrap menus
-// require get_template_directory() . '/inc/wp-bootstrap-navwalker.php';
+// load custom fields
+require get_template_directory() . '/inc/custom-fields.php';
 
 
 
@@ -171,7 +171,7 @@ $myUpdateChecker->setAuthentication('7ede950e6268eeb025f95b726489c9ee41fd8c08');
 // $myUpdateChecker->setBranch('stable-branch-name');
 
 if( function_exists('acf_add_options_page') ) {
-	
+
 	acf_add_options_page('Global Custom Fields');
 
 }

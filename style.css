@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*!
  Theme Name: txakolina
- Author: Pasquale Bucci
- Description: Elegant and clean, txakolina is a theme designed to display your special day with stunning beauty. With a fashionable clean look, txakolina is a wedding theme that takes just minutes to setup. The theme fits for Engagement, Wedding Event, Wedding Planner, Video Maker, Wedding Photography, Flower Designer and any kind of Wedding Industries and activities.
- Version: 1.0.4
+ Author: Peter Mumford
+ Description: Fork of Simona by Pasquale Bucci
+ Version: 0.1
  License: GNU General Public License v2 or later
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain: txakolina
@@ -7496,6 +7496,10 @@ iframe[src*="soundcloud"] {
   position: fixed;
   max-width: 100%; }
 
+@media (max-width: 600px) {
+  #home-slider {
+    position: absolute; } }
+
 .txakolina-search {
   height: 39px;
   display: none; }
@@ -7539,8 +7543,22 @@ iframe[src*="soundcloud"] {
   text-decoration: none; }
 
 @media (min-width: 992px) {
-  .txakolina-search input[type='search'] {
+  .txakolina-search form input[type='search'] {
     width: 400px; } }
+
+@media (max-width: 768px) {
+  .txakolina-search form {
+    text-align: center;
+    white-space: nowrap; }
+    .txakolina-search form:before {
+      display: table;
+      clear: both;
+      content: ''; }
+    .txakolina-search form > label, .txakolina-search form > input {
+      margin-top: 15px; }
+    .txakolina-search form input[type='search'] {
+      text-align: left;
+      width: 250px; } }
 
 /**
  * Search

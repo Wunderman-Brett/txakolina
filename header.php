@@ -66,14 +66,14 @@
 
     	<header id="masthead" class="site-header navbar" role="banner">
         <div class="container">
-          <div class="site-branding navbar-header">
+          <div class="site-branding navbar-header pull-left">
 
             <a class="navbar-brand" href="<?php echo get_bloginfo('url'); ?>">
               <img src="<?php the_field('site_logo', 'option'); ?>" alt="Fresenius North America">
             </a>
       		</div><!-- .site-branding -->
 
-          <div class="site-header-icons navbar-right">
+          <div class="site-header-icons pull-right">
             <a id="txakolina-search-button" class="txakolina-search-button" href>
               <i class="fa fa-lg fa-search"></i>
             </a>
@@ -81,7 +81,7 @@
               <i class="fa fa-lg fa-bars"></i>
             </a>
           </div>
-          <div class="collapse navbar-collapse">
+          <div class="navbar-collapse">
             <div class="navbar-right hidden-xs hidden-sm">
               <?php wp_nav_menu( array(
                 'theme_location' => 'primary',

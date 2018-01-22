@@ -50,8 +50,30 @@
 
 @media (min-width: $screen-md) {
 	.txakolina-search {
-		input[type='search'] {
-			width: 400px;
+		form {
+			input[type='search'] {
+				width: 400px;
+			}
+		}
+	}
+}
+@media (max-width: $screen-sm) {
+	.txakolina-search {
+		form {
+			text-align: center;
+			white-space: nowrap;
+			&:before {
+				display: table;
+				clear: both;
+				content: '';
+			}
+			> label, > input {
+				margin-top: 15px;
+			}
+			input[type='search'] {
+				text-align: left;
+				width: 250px;
+			}
 		}
 	}
 }
