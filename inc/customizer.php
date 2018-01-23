@@ -16,7 +16,7 @@ function txakolina_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
 	$wp_customize->get_section( 'colors' )->title = __( 'Theme Colors', 'txakolina' );
-	$wp_customize->get_section( 'header_image' )->title = __( 'Header Slider', 'txakolina' );
+	$wp_customize->get_section( 'header_image' )->title = __( 'Home Hero', 'txakolina' );
 
 	$wp_customize->get_control( 'display_header_text' )->label = __( 'Show Tagline in Header Slider', 'txakolina' );
 	$wp_customize->get_control( 'header_textcolor' )->label = __( 'Tagline Text Color', 'txakolina' );

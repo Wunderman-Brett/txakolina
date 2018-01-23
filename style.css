@@ -3,7 +3,7 @@
  Theme Name: txakolina
  Author: Peter Mumford
  Description: Fork of Simona by Pasquale Bucci
- Version: 0.1
+ Version: 0.2
  License: GNU General Public License v2 or later
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain: txakolina
@@ -7470,34 +7470,16 @@ iframe[src*="soundcloud"] {
 /**
  * Slider with header images.
  */
-.slick-slider {
-  margin-bottom: 0; }
-
-.slick-slide {
-  height: auto; }
-
-.slick-prev:before,
-.slick-next:before {
-  color: #202020; }
-
-.header-slider {
-  margin-bottom: 0; }
-
-.header-slider:after {
-  background: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: ''; }
-
-#home-slider {
+#home-hero {
   position: fixed;
-  max-width: 100%; }
+  max-width: 100%;
+  left: 0;
+  right: 0; }
+  #home-hero img {
+    min-width: 100%; }
 
 @media (max-width: 600px) {
-  #home-slider {
+  #home-hero {
     position: absolute; } }
 
 .txakolina-search {

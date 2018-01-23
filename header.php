@@ -27,14 +27,10 @@
      	<div class="loader-section section-right"></div>
     </div>
 
-
-
-    <?php if ( is_front_page() && ! is_paged() ) { ?>
-    <div id="home-slider">
-    			<?php txakolina_slider_from_header() ?>
-    			<?php if ( get_header_image() ) : ?>
-    					<p class="hidden-xs site-description"><?php bloginfo( 'description' ); ?></p>
-    			<?php endif; ?>
+    <?php if ( is_front_page() && ! is_paged() && get_header_image() ) { ?>
+    <div id="home-hero">
+      <img src="<?php echo esc_url( get_header_image() ); ?>">
+				<p class="hidden-xs site-description"><?php bloginfo( 'description' ); ?></p>
     </div>
     <?php } ?>
 

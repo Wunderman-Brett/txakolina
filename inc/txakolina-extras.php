@@ -5,30 +5,6 @@
  * @package txakolina
  */
 
-if ( ! function_exists( 'txakolina_slider_from_header' ) ) :
-	/**
-	 * Build a slider form custom header uploads.
-	 */
-	function txakolina_slider_from_header() {
-		if ( get_header_image() ) :
-
-			$headers = get_uploaded_header_images();
-
-			if ( is_random_header_image() ) {
-				shuffle( $headers );
-			} ?>
-
-				<div class="header-slider">
-  
-                <?php foreach ( $headers as $header ) { ?>
-                    <img src="<?php echo esc_url( $header['url'] ); ?>">
-                <?php } ?>
-                  
-				</div>
-                
-		<?php endif;
-	}
-endif;
 
 if ( ! function_exists( 'txakolina_header_style' ) ) :
 	/**
