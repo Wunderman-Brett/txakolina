@@ -6,6 +6,14 @@
 // Headings
 // -------------------------
 
+h1 {
+  font-stretch: expanded;
+  &.entry-title,
+  &.page-title {
+    font-size: 56px;
+    text-align: center;
+  }
+}
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $headings-font-family;
@@ -63,6 +71,7 @@ p {
   margin-bottom: $line-height-computed;
   font-size: floor(($font-size-base * 1.15));
   font-weight: 300;
+  font-stretch: expanded;
   line-height: 1.4;
 
   @media (min-width: $screen-sm-min) {

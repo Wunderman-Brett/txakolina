@@ -6,6 +6,4 @@
 
 // @codekit-prepend 'vendor/jquery.nanoscroller.min.js';
 
-// 'vendor/slick.min.js';
-
 // @codekit-prepend 'vendor/bootstrap.3.3.7.min.js';

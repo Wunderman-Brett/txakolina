@@ -3,7 +3,17 @@
 --------------------------------------------------------------*/
 a {
 	text-decoration: none;
-	// transition: all 0.35s;
+	transition: all 0.35s;
+	&.morelink {
+		&:hover {
+			text-decoration: none;
+		}
+		&:after {
+			content: '\f054';
+			font-family: FontAwesome;
+			padding-left: 7px;
+		}
+	}
 }
 
 a:hover,

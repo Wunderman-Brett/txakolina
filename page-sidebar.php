@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Full Width Page
+ * Template Name: Page with sidebar
  *
  * @package txakolina
  */
@@ -10,8 +10,7 @@ get_header(); ?>
 
 <div class="row">
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main col-md-12" role="main">
-
+		<main id="main" class="site-main col-md-9" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -28,5 +27,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-</div><!-- .row -->
+
+<?php get_sidebar(); ?>
+        </div>
 <?php get_footer(); ?>

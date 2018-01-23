@@ -42,6 +42,7 @@
 
 		// Initialize Match Height.
 		$( '.post' ).matchHeight();
+		$('div.metric').matchHeight();
 
 		// Initialize Fitvids.
 		$( '#content' ).fitVids();

@@ -53,8 +53,6 @@ this.activeTarget=b,this.clear();var c=this.selector+'[data-target="'+b+'"],'+th
 
 // @codekit-prepend 'vendor/jquery.nanoscroller.min.js';
 
-// 'vendor/slick.min.js';
-
 // @codekit-prepend 'vendor/bootstrap.3.3.7.min.js';
 
 
