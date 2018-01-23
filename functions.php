@@ -164,8 +164,9 @@ $myUpdateChecker = Puc_v4p3_Factory::buildUpdateChecker(
 		'txakolina'
 );
 
-//Optional: If you're using a private repository, specify the access token like this:
-$myUpdateChecker->setAuthentication('7ede950e6268eeb025f95b726489c9ee41fd8c08');
+// Optional: If you're using a private repository, specify the access token like this:
+// changed repo to public for easier collaboration
+// $myUpdateChecker->setAuthentication('7ede950e6268eeb025f95b726489c9ee41fd8c08');
 
 //Optional: Set the branch that contains the stable release.
 // $myUpdateChecker->setBranch('stable-branch-name');
