@@ -109,14 +109,16 @@ add_action( 'widgets_init', 'txakolina_widgets_init' );
  * Enqueue scripts and styles.
  */
 function txakolina_scripts() {
-	wp_enqueue_style( 'txakolina-style', get_stylesheet_uri() );
+	$theme = wp_get_theme();
+
+	wp_enqueue_style( 'txakolina-style', get_stylesheet_uri(), false, $theme->get('Version') );
 
 	// Load fontawesome.
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css', array(), '4.4.0' );
 
 	// Load txakolina dependencies and custom js.
-	wp_enqueue_script( 'dependencies', get_template_directory_uri() . '/js/txakolina-dependencies-min.js', array( 'jquery' ), '1.0.0', true );
-	wp_enqueue_script( 'txakolina-js', get_template_directory_uri() . '/js/txakolina-min.js', array( 'jquery', 'dependencies' ), '1.0.0', true );
+	wp_enqueue_script( 'dependencies', get_template_directory_uri() . '/js/txakolina-dependencies-min.js', array( 'jquery' ), $theme->get('Version'), true );
+	wp_enqueue_script( 'txakolina-js', get_template_directory_uri() . '/js/txakolina-min.js', array( 'jquery', 'dependencies' ), $theme->get('Version'), true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
