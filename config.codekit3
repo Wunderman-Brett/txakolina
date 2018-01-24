@@ -348,19 +348,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/scss\/vendor\/_swipebox.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/scss\/vendor\/_swipebox.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/css\/scss\/vendor\/bootstrap\/_alerts.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2473,26 +2460,6 @@
 		"oA": 1,
 		"oAP": "\/js\/vendor\/jquery.nanoscroller.min-min.js",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/vendor\/jquery.swipebox.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/js\/vendor\/jquery.swipebox-min.js",
-		"oF": 1,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/js\/vendor\/jquery.swipebox.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "\/js\/vendor\/jquery.swipebox.min-min.js",
-		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},

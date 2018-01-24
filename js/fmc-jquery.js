@@ -68,10 +68,10 @@
 		} );
 
 		// Swipebox on galleries.
-		$( '.gallery-icon a' ).each( function() {
-			$( this ).attr( 'href', $( this ).find( 'img' ).attr( 'src' ).replace( '-800x600', '' ) );
-			$( this ).attr( 'title', $( this ).parent( '.gallery-icon' ).next( 'figcaption' ).text() );
-		} );
+		// $( '.gallery-icon a' ).each( function() {
+		// 	$( this ).attr( 'href', $( this ).find( 'img' ).attr( 'src' ).replace( '-800x600', '' ) );
+		// 	$( this ).attr( 'title', $( this ).parent( '.gallery-icon' ).next( 'figcaption' ).text() );
+		// } );
 		// $( '.gallery-icon a' ).swipebox();
 
 		/**

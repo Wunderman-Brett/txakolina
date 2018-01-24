@@ -47,7 +47,7 @@
 
     <!-- This is the Nano mmenu that slides in
     We're using it to show a full menu with child elements -->
-    <nav id="site-navigation" class="site-navigation" role="navigation">
+    <nav id="site-navigation" class="site-navigation">
         <div class="site-navigation-close">&#x2715;</div>
     		<div class="nano">
             <div class="nano-content">
