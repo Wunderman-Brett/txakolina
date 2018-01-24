@@ -15,10 +15,7 @@ html.swipebox-html.swipebox-touch {
 	left: 0;
 	z-index: 99999 !important;
 	overflow: hidden;
-	-webkit-user-select: none;
-	 -moz-user-select: none;
-	  -ms-user-select: none;
-		  user-select: none;
+  user-select: none;
 }
 
 #swipebox-container {
@@ -28,8 +25,7 @@ html.swipebox-html.swipebox-touch {
 }
 
 #swipebox-slider {
-	-webkit-transition: -webkit-transform 0.4s ease;
-		  transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
 	height: 100%;
 	left: 0;
 	top: 0;
@@ -92,8 +88,7 @@ html.swipebox-html.swipebox-touch {
 
 #swipebox-bottom-bar,
 #swipebox-top-bar {
-	-webkit-transition: 0.5s;
-		  transition: 0.5s;
+  transition: 0.5s;
 	position: absolute;
 	left: 0;
 	z-index: 999;
@@ -105,16 +100,14 @@ html.swipebox-html.swipebox-touch {
 	bottom: -50px;
 }
 #swipebox-bottom-bar.visible-bars {
-	-webkit-transform: translate3d(0, -50px, 0);
-		  transform: translate3d(0, -50px, 0);
+  transform: translate3d(0, -50px, 0);
 }
 
 #swipebox-top-bar {
 	top: -50px;
 }
 #swipebox-top-bar.visible-bars {
-	-webkit-transform: translate3d(0, 50px, 0);
-		  transform: translate3d(0, 50px, 0);
+  transform: translate3d(0, 50px, 0);
 }
 
 #swipebox-title {
@@ -179,10 +172,8 @@ html.swipebox-html.swipebox-touch {
 }
 
 .swipebox-touch #swipebox-container:before, .swipebox-touch #swipebox-container:after {
-	-webkit-backface-visibility: hidden;
-		  backface-visibility: hidden;
-	-webkit-transition: all .3s ease;
-		  transition: all .3s ease;
+  backface-visibility: hidden;
+  transition: all .3s ease;
 	content: ' ';
 	position: absolute;
 	z-index: 999;
@@ -193,13 +184,11 @@ html.swipebox-html.swipebox-touch {
 }
 .swipebox-touch #swipebox-container:before {
 	left: 0;
-	-webkit-box-shadow: inset 10px 0px 10px -8px $grey-65;
-		  box-shadow: inset 10px 0px 10px -8px $grey-65;
+  box-shadow: inset 10px 0px 10px -8px $grey-65;
 }
 .swipebox-touch #swipebox-container:after {
 	right: 0;
-	-webkit-box-shadow: inset -10px 0px 10px -8px $grey-65;
-		  box-shadow: inset -10px 0px 10px -8px $grey-65;
+  box-shadow: inset -10px 0px 10px -8px $grey-65;
 }
 .swipebox-touch #swipebox-overlay.leftSpringTouch #swipebox-container:before {
 	opacity: 1;
@@ -274,13 +263,12 @@ html.swipebox-html.swipebox-touch {
 /* Skin
 --------------------------*/
 #swipebox-overlay {
-	background: 10d0d0d;
+	background: #0d0d0d;
 }
 
 #swipebox-bottom-bar,
 #swipebox-top-bar {
 	text-shadow: 1px 1px 1px black;
-	background: 1000;
 	opacity: 0.95;
 }
 
