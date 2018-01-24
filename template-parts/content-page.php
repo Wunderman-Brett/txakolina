@@ -10,21 +10,32 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
+
 	<?php if ( ! is_front_page() ) { ?>
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</header><!-- .entry-header -->
 	<?php } ?>
-	
+
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'txakolina' ),
-				'after'  => '</div>',
-			) );
-		?>
+		<?php if (have_rows('half_width_callout')) : ?>
+			<div class="row">
+			<?php while (have_rows('half_width_callout')) : the_row(); ?>
+				<div class="col-sm-6 half-width-callout">
+					<?php
+					$image = get_sub_field('half_width_thumbnail');
+					if ($image) {
+						echo wp_get_attachment_image($image, 'large');
+					}
+					echo esc_html(the_sub_field('half_width_html')); ?>
+				</div>
+			<?php endwhile; ?>
+		</div>
+	<?php endif; ?>
+	<?php if (get_field('page_small_text')) { ?>
+		<small class="entry-small-text"><?php the_field('page_small_text'); ?></small>
+	<?php } ?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
@@ -40,6 +51,5 @@
 			);
 		?>
 	</footer><!-- .entry-footer -->
-	
-</article><!-- #post-## -->
 
+</article><!-- #post-## -->

@@ -4,7 +4,8 @@
 a {
 	text-decoration: none;
 	transition: all 0.35s;
-	&.morelink {
+	&.morelink, &.teaser-link {
+		font-weight: 700;
 		&:hover {
 			text-decoration: none;
 		}
@@ -14,8 +15,23 @@ a {
 			padding-left: 7px;
 		}
 	}
+	&.externlink, &.external-link {
+		&:after {
+			content: '\f08e';
+			font-family: FontAwesome;
+			padding-left: 7px;
+		}
+	}
 }
-
+.phoneCall {
+	&:after {
+		content: '\f095';
+		font-family: FontAwesome;
+		font-size: 140%;
+		padding-left: 10px;
+		color: $link-color;
+	}
+}
 a:hover,
 a:focus,
 a:active {
