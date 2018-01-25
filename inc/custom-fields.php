@@ -1,6 +1,6 @@
 <?php
 if( function_exists('acf_add_local_field_group') ):
-
+// Global fields
 acf_add_local_field_group(array(
 	'key' => 'group_5a64bae7457e5',
 	'title' => 'Global fields',
@@ -48,7 +48,7 @@ acf_add_local_field_group(array(
 	'active' => 1,
 	'description' => '',
 ));
-
+// Front page fields
 acf_add_local_field_group(array(
 	'key' => 'group_5a676abe46e7f',
 	'title' => 'Front Page Fields',
@@ -190,11 +190,75 @@ acf_add_local_field_group(array(
 	'active' => 1,
 	'description' => '',
 ));
-
+// Page fields
 acf_add_local_field_group(array(
 	'key' => 'group_5a68abdb07437',
 	'title' => 'Page Fields',
 	'fields' => array(
+		array(
+			'key' => 'field_5a69e3064632f',
+			'label' => 'Full Width Callout',
+			'name' => 'full_width_callout',
+			'type' => 'repeater',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'collapsed' => '',
+			'min' => 0,
+			'max' => 0,
+			'layout' => 'table',
+			'button_label' => '',
+			'sub_fields' => array(
+				array(
+					'key' => 'field_5a69e31946330',
+					'label' => 'Full Width Image',
+					'name' => 'full_width_image',
+					'type' => 'image',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'return_format' => 'id',
+					'preview_size' => 'medium',
+					'library' => 'all',
+					'min_width' => '',
+					'min_height' => '',
+					'min_size' => '',
+					'max_width' => '',
+					'max_height' => '',
+					'max_size' => '',
+					'mime_types' => '',
+				),
+				array(
+					'key' => 'field_5a69f69d9c024',
+					'label' => 'Full Width HTML',
+					'name' => 'full_width_html',
+					'type' => 'wysiwyg',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'tabs' => 'all',
+					'toolbar' => 'full',
+					'media_upload' => 1,
+					'delay' => 0,
+				),
+			),
+		),
 		array(
 			'key' => 'field_5a68e58953c39',
 			'label' => 'Half Width Callout',
@@ -297,6 +361,5 @@ acf_add_local_field_group(array(
 	'active' => 1,
 	'description' => '',
 ));
-
 
 endif;

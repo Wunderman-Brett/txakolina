@@ -19,6 +19,24 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
+		<?php if (have_rows('full_width_callout')) : ?>
+			<div class="row">
+			<?php while (have_rows('full_width_callout')) : the_row(); ?>
+				<div class="col-sm-12 full-width-callout">
+					<div class="full-width-callout-relative">
+					<?php
+					$full_image = get_sub_field('full_width_image');
+					if ($full_image) {
+						echo wp_get_attachment_image($full_image, 'full');
+					} ?>
+					<div class="full-width-callout-html">
+						<?php echo esc_html(the_sub_field('full_width_html')); ?>
+					</div>
+					</div>
+				</div>
+			<?php endwhile; ?>
+			</div>
+	<?php endif; ?>
 		<?php if (have_rows('half_width_callout')) : ?>
 			<div class="row">
 			<?php while (have_rows('half_width_callout')) : the_row(); ?>

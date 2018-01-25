@@ -17,7 +17,14 @@
 		position: absolute;
 	}
 }
-
+.home.page {
+	.entry-content {
+		p {
+			max-width: none;
+			text-align: center;
+		}
+	}
+}
 .metric {
 	padding-bottom: 30px;
   &-h3 {
