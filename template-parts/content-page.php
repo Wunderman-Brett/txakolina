@@ -27,7 +27,12 @@
 					<?php while (have_rows('right_column_boxes')) : the_row(); ?>
 						<h2><?php the_sub_field('box_heading') ?></h2>
 				</div>
-			<?php endwhile; endif; ?>
+			<?php endwhile; else : ?>
+				<div class="col-md-12">
+					<?php the_content(); ?>
+				</div>
+			<?php endif; ?>
+
 		</div>
 
 		<?php if (have_rows('full_width_callout')) : ?>
