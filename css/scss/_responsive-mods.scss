@@ -1,0 +1,25 @@
+
+// 782px is a WordPress breakpoint for the height of the admin bar
+@media (max-width: 782px) {
+	.admin-bar .site-header.affix {
+		top: 46px;
+	}
+}
+
+// another wordpress breakpoint
+@media (max-width: 600px) {
+	#home-hero {
+		position: absolute;
+    img {
+      min-height: 250px;
+      max-width: none;
+      margin-left: -50%;     
+    }
+	}
+  .affix, .navbar {
+    position: static;
+  }
+  .site-header.affix + .site-content {
+    padding-top: 0;
+  }
+}

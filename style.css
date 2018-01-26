@@ -3,7 +3,7 @@
  Theme Name: txakolina
  Author: Peter Mumford
  Description: Fork of Simona by Pasquale Bucci
- Version: 0.5
+ Version: 0.6
  License: GNU General Public License v2 or later
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain: txakolina
@@ -1168,10 +1168,6 @@ hr {
 
 h1 {
   font-stretch: expanded; }
-  h1.entry-title, h1.page-title {
-    font-size: 56px; }
-    h1.entry-title-home, h1.page-title-home {
-      text-align: center; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -1230,19 +1226,27 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 41px; }
+  font-size: 32px; }
+  h1.page-title-home, .h1.page-title-home {
+    text-align: center; }
 
 h2, .h2 {
   font-size: 22px;
   font-weight: 300;
   font-stretch: expanded; }
 
+@media (min-width: 480px) {
+  h1, .h1 {
+    font-size: 38px; } }
+
 @media (min-width: 768px) {
+  h1.entry-title, h1.page-title, .h1.entry-title, .h1.page-title {
+    font-size: 56px; }
   h2, .h2 {
     font-size: 28px; } }
 
 h3, .h3 {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 300;
   font-stretch: expanded;
   margin-bottom: 32.5px; }
@@ -1562,7 +1566,7 @@ pre {
   @media (min-width: 992px) {
     .container {
       width: 970px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1280px) {
     .container {
       width: 1280px; } }
 
@@ -1960,7 +1964,7 @@ pre {
   .col-md-offset-12 {
     margin-left: 100%; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left; }
   .col-lg-1 {
@@ -5746,7 +5750,7 @@ button.close {
   .visible-sm-inline-block {
     display: inline-block !important; } }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1279px) {
   .visible-md {
     display: block !important; }
   table.visible-md {
@@ -5757,19 +5761,19 @@ button.close {
   td.visible-md {
     display: table-cell !important; } }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1279px) {
   .visible-md-block {
     display: block !important; } }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1279px) {
   .visible-md-inline {
     display: inline !important; } }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1279px) {
   .visible-md-inline-block {
     display: inline-block !important; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .visible-lg {
     display: block !important; }
   table.visible-lg {
@@ -5780,15 +5784,15 @@ button.close {
   td.visible-lg {
     display: table-cell !important; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .visible-lg-block {
     display: block !important; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .visible-lg-inline {
     display: inline !important; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .visible-lg-inline-block {
     display: inline-block !important; } }
 
@@ -5800,11 +5804,11 @@ button.close {
   .hidden-sm {
     display: none !important; } }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1279px) {
   .hidden-md {
     display: none !important; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .hidden-lg {
     display: none !important; } }
 
@@ -6470,8 +6474,23 @@ a:active {
 .half-width-callout img {
   margin-bottom: 15px; }
 
+.half-width-callout h3 {
+  margin: 0 0 10px; }
+
+.half-width-callout .fluid-width-video-wrapper {
+  margin-bottom: 15px; }
+
 .full-width-callout {
   margin-bottom: 30px; }
+  .full-width-callout img {
+    width: 100%; }
+
+@media (max-width: 768px) {
+  .full-width-callout-relative {
+    overflow: hidden; }
+  .full-width-callout img {
+    max-width: 175%;
+    width: auto; } }
 
 @media (min-width: 768px) {
   .full-width-callout-relative {
@@ -7074,10 +7093,6 @@ iframe[src*="soundcloud"] {
 .admin-bar .site-header.affix {
   top: 32px; }
 
-@media (max-width: 782px) {
-  .admin-bar .site-header.affix {
-    top: 46px; } }
-
 /**
  * Slider with header images.
  */
@@ -7088,10 +7103,6 @@ iframe[src*="soundcloud"] {
   right: 0; }
   #home-hero img {
     min-width: 100%; }
-
-@media (max-width: 600px) {
-  #home-hero {
-    position: absolute; } }
 
 .home.page .entry-content p {
   max-width: none;
@@ -7504,3 +7515,19 @@ object {
 
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%; }
+
+@media (max-width: 782px) {
+  .admin-bar .site-header.affix {
+    top: 46px; } }
+
+@media (max-width: 600px) {
+  #home-hero {
+    position: absolute; }
+    #home-hero img {
+      min-height: 250px;
+      max-width: none;
+      margin-left: -50%; }
+  .affix, .navbar {
+    position: static; }
+  .site-header.affix + .site-content {
+    padding-top: 0; } }

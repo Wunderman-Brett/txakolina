@@ -18,20 +18,33 @@
 	<?php } ?>
 
 	<div class="entry-content">
-		<?php the_content(); ?>
+		<div class="row">
+			<?php if (have_rows('right_column_boxes')) : ?>
+				<div class="col-md-9 col-sm-8">
+					<?php the_content(); ?>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<?php while (have_rows('right_column_boxes')) : the_row(); ?>
+						<h2><?php the_sub_field('box_heading') ?></h2>
+				</div>
+			<?php endwhile; endif; ?>
+		</div>
+
 		<?php if (have_rows('full_width_callout')) : ?>
 			<div class="row">
 			<?php while (have_rows('full_width_callout')) : the_row(); ?>
 				<div class="col-sm-12 full-width-callout">
 					<div class="full-width-callout-relative">
-					<?php
-					$full_image = get_sub_field('full_width_image');
-					if ($full_image) {
-						echo wp_get_attachment_image($full_image, 'full');
-					} ?>
-					<div class="full-width-callout-html">
-						<?php echo esc_html(the_sub_field('full_width_html')); ?>
-					</div>
+						<?php
+						$full_image = get_sub_field('full_width_image');
+						$img_src = $full_image['sizes']['large'];
+						if ($full_image) { ?>
+						<img src="<?php echo $img_src ?>">
+						<?php } ?>
+						<div class="full-width-callout-html">
+							<h2><?php the_sub_field('full_width_heading'); ?></h2>
+							<a href="<?php the_sub_field('full_width_link'); ?>" class="morelink"><?php the_sub_field('full_width_link_text'); ?></a>
+						</div>
 					</div>
 				</div>
 			<?php endwhile; ?>
@@ -41,12 +54,17 @@
 			<div class="row">
 			<?php while (have_rows('half_width_callout')) : the_row(); ?>
 				<div class="col-sm-6 half-width-callout">
-					<?php
-					$image = get_sub_field('half_width_thumbnail');
-					if ($image) {
-						echo wp_get_attachment_image($image, 'large');
+					<?php if (get_sub_field('image_or_video') == 'video') {
+						echo get_sub_field('video');
+					} else {
+						$image = get_sub_field('half_width_thumbnail');
+						if ($image) {
+							echo wp_get_attachment_image($image, 'large');
+						}
 					}
 					echo esc_html(the_sub_field('half_width_html')); ?>
+					<h3><?php the_sub_field('half_width_heading'); ?></h3>
+					<a href="<?php the_sub_field('half_width_link'); ?>" class="morelink"><?php the_sub_field('half_width_link_text'); ?></a>
 				</div>
 			<?php endwhile; ?>
 		</div>

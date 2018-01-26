@@ -8,13 +8,6 @@
 
 h1 {
   font-stretch: expanded;
-  &.entry-title,
-  &.page-title {
-    font-size: 56px;
-    &-home {
-      text-align: center;
-    }
-  }
 }
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -53,14 +46,30 @@ h6, .h6 {
   }
 }
 
-h1, .h1 { font-size: $font-size-h1; }
+h1, .h1 {
+  font-size: $font-size-h1;
+  &.page-title-home {
+    text-align: center;
+  }
+}
 
 h2, .h2 {
   font-size: 22px;
   font-weight: 300;
   font-stretch: expanded;
 }
+@media (min-width: $screen-xs) {
+  h1, .h1 {
+    font-size: 38px;
+  }
+}
 @media (min-width: $screen-sm) {
+  h1, .h1 {
+    &.entry-title,
+    &.page-title {
+      font-size: 56px;
+    }
+  }
   h2, .h2 {
     font-size: 28px;
   }
