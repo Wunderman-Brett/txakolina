@@ -34,7 +34,7 @@
 							<div class="widget-content">
 								<h4 class="widget-title"><?php the_sub_field('box_heading') ?></h4>
 								<?php the_sub_field('box_text'); ?>
-								<a class="btn btn-action" href="<?php the_sub_field('box_cta_link'); ?>" target="_blank" rel="noopener"><?php the_sub_field('box_cta_label'); ?></a>
+								<a class="btn btn-cta" href="<?php the_sub_field('box_cta_link'); ?>" target="_blank" rel="noopener"><?php the_sub_field('box_cta_label'); ?></a>
 							</div>
 						</div>
 
