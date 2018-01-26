@@ -22,7 +22,7 @@
         </div>
         <?php } ?>
 
-		<div class="site-info">Site Info div here	test
+		<div class="site-info">Site Info div here	test test
     </div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
