@@ -1,196 +1,5 @@
 <?php
 if( function_exists('acf_add_local_field_group') ):
-// Global fields
-acf_add_local_field_group(array(
-	'key' => 'group_5a64bae7457e5',
-	'title' => 'Global fields',
-	'fields' => array(
-		array(
-			'key' => 'field_5a64bafb6290a',
-			'label' => 'Site logo',
-			'name' => 'site_logo',
-			'type' => 'image',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'return_format' => 'url',
-			'preview_size' => 'full',
-			'library' => 'all',
-			'min_width' => '',
-			'min_height' => '',
-			'min_size' => '',
-			'max_width' => '',
-			'max_height' => '',
-			'max_size' => '',
-			'mime_types' => '',
-		),
-	),
-	'location' => array(
-		array(
-			array(
-				'param' => 'options_page',
-				'operator' => '==',
-				'value' => 'acf-options-global-custom-fields',
-			),
-		),
-	),
-	'menu_order' => 0,
-	'position' => 'normal',
-	'style' => 'default',
-	'label_placement' => 'top',
-	'instruction_placement' => 'label',
-	'hide_on_screen' => '',
-	'active' => 1,
-	'description' => '',
-));
-// Front page fields
-acf_add_local_field_group(array(
-	'key' => 'group_5a676abe46e7f',
-	'title' => 'Front Page Fields',
-	'fields' => array(
-		array(
-			'key' => 'field_5a676acb4b4c7',
-			'label' => 'Metric',
-			'name' => 'metric',
-			'type' => 'repeater',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'collapsed' => '',
-			'min' => 0,
-			'max' => 0,
-			'layout' => 'table',
-			'button_label' => '',
-			'sub_fields' => array(
-				array(
-					'key' => 'field_5a676aee4b4c8',
-					'label' => 'Metric Graphic',
-					'name' => 'metric_graphic',
-					'type' => 'image',
-					'instructions' => '',
-					'required' => 0,
-					'conditional_logic' => 0,
-					'wrapper' => array(
-						'width' => '',
-						'class' => '',
-						'id' => '',
-					),
-					'return_format' => 'array',
-					'preview_size' => 'thumbnail',
-					'library' => 'all',
-					'min_width' => '',
-					'min_height' => '',
-					'min_size' => '',
-					'max_width' => '',
-					'max_height' => '',
-					'max_size' => '',
-					'mime_types' => '',
-				),
-				array(
-					'key' => 'field_5a676b244b4c9',
-					'label' => 'Metric Head',
-					'name' => 'metric_head',
-					'type' => 'text',
-					'instructions' => '',
-					'required' => 0,
-					'conditional_logic' => 0,
-					'wrapper' => array(
-						'width' => '',
-						'class' => '',
-						'id' => '',
-					),
-					'default_value' => '',
-					'placeholder' => '',
-					'prepend' => '',
-					'append' => '',
-					'maxlength' => '',
-				),
-				array(
-					'key' => 'field_5a676b3c4b4ca',
-					'label' => 'Metric Subhead',
-					'name' => 'metric_subhead',
-					'type' => 'text',
-					'instructions' => '',
-					'required' => 0,
-					'conditional_logic' => 0,
-					'wrapper' => array(
-						'width' => '',
-						'class' => '',
-						'id' => '',
-					),
-					'default_value' => '',
-					'placeholder' => '',
-					'prepend' => '',
-					'append' => '',
-					'maxlength' => '',
-				),
-				array(
-					'key' => 'field_5a676c6633138',
-					'label' => 'Metric Link',
-					'name' => 'metric_link',
-					'type' => 'url',
-					'instructions' => '',
-					'required' => 0,
-					'conditional_logic' => 0,
-					'wrapper' => array(
-						'width' => '',
-						'class' => '',
-						'id' => '',
-					),
-					'default_value' => '',
-					'placeholder' => '',
-				),
-				array(
-					'key' => 'field_5a676c8df1210',
-					'label' => 'Metric Link Label',
-					'name' => 'metric_link_label',
-					'type' => 'text',
-					'instructions' => '',
-					'required' => 0,
-					'conditional_logic' => 0,
-					'wrapper' => array(
-						'width' => '',
-						'class' => '',
-						'id' => '',
-					),
-					'default_value' => '',
-					'placeholder' => '',
-					'prepend' => '',
-					'append' => '',
-					'maxlength' => '',
-				),
-			),
-		),
-	),
-	'location' => array(
-		array(
-			array(
-				'param' => 'page_type',
-				'operator' => '==',
-				'value' => 'front_page',
-			),
-		),
-	),
-	'menu_order' => 0,
-	'position' => 'normal',
-	'style' => 'default',
-	'label_placement' => 'top',
-	'instruction_placement' => 'label',
-	'hide_on_screen' => '',
-	'active' => 1,
-	'description' => '',
-));
-// Page fields
 
 acf_add_local_field_group(array(
 	'key' => 'group_5a68abdb07437',
@@ -358,6 +167,31 @@ acf_add_local_field_group(array(
 					'return_format' => 'value',
 				),
 				array(
+					'key' => 'field_5a6cc4ec5900c',
+					'label' => 'Half Width Callout Options',
+					'name' => 'half_width_callout_options',
+					'type' => 'checkbox',
+					'instructions' => 'Select which optional elements should display in the callout',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'choices' => array(
+						'HTML block?' => 'HTML block?',
+						'Call to action button?' => 'Call to action button?',
+					),
+					'allow_custom' => 0,
+					'save_custom' => 0,
+					'default_value' => array(
+					),
+					'layout' => 'horizontal',
+					'toggle' => 0,
+					'return_format' => 'value',
+				),
+				array(
 					'key' => 'field_5a68e5b453c3a',
 					'label' => 'Half Width Thumbnail',
 					'name' => 'half_width_thumbnail',
@@ -439,7 +273,15 @@ acf_add_local_field_group(array(
 					'type' => 'wysiwyg',
 					'instructions' => '',
 					'required' => 0,
-					'conditional_logic' => 0,
+					'conditional_logic' => array(
+						array(
+							array(
+								'field' => 'field_5a6cc4ec5900c',
+								'operator' => '==',
+								'value' => 'HTML block?',
+							),
+						),
+					),
 					'wrapper' => array(
 						'width' => '',
 						'class' => '',
@@ -453,12 +295,20 @@ acf_add_local_field_group(array(
 				),
 				array(
 					'key' => 'field_5a68e5f953c3b',
-					'label' => 'Half Width Link',
+					'label' => 'Half Width CTA Link',
 					'name' => 'half_width_link',
 					'type' => 'url',
 					'instructions' => '',
 					'required' => 0,
-					'conditional_logic' => 0,
+					'conditional_logic' => array(
+						array(
+							array(
+								'field' => 'field_5a6cc4ec5900c',
+								'operator' => '==',
+								'value' => 'Call to action button?',
+							),
+						),
+					),
 					'wrapper' => array(
 						'width' => '',
 						'class' => '',
@@ -469,12 +319,20 @@ acf_add_local_field_group(array(
 				),
 				array(
 					'key' => 'field_5a6a345653eec',
-					'label' => 'Half Width Link Text',
+					'label' => 'Half Width CTA Text',
 					'name' => 'half_width_link_text',
 					'type' => 'text',
 					'instructions' => '',
 					'required' => 0,
-					'conditional_logic' => 0,
+					'conditional_logic' => array(
+						array(
+							array(
+								'field' => 'field_5a6cc4ec5900c',
+								'operator' => '==',
+								'value' => 'Call to action button?',
+							),
+						),
+					),
 					'wrapper' => array(
 						'width' => '',
 						'class' => '',
@@ -634,6 +492,13 @@ acf_add_local_field_group(array(
 				'value' => 'page',
 			),
 		),
+		array(
+			array(
+				'param' => 'page_type',
+				'operator' => '==',
+				'value' => 'front_page',
+			),
+		),
 	),
 	'menu_order' => 0,
 	'position' => 'normal',
@@ -644,6 +509,5 @@ acf_add_local_field_group(array(
 	'active' => 1,
 	'description' => '',
 ));
-
 
 endif;

@@ -19,7 +19,10 @@
 		border-bottom: 1px solid #eaeaea;
 		box-shadow: 0 -1px 4px rgba(0,0,0,0.4);
 		&.affix + .site-content {
-			padding-top: 90px;
+			// this was working at 90px
+			// now it needs to be 115px
+			// what changed?
+			padding-top: 115px;
 		}
 		&-icons {
 			margin: 33px 0 0 15px;

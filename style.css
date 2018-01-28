@@ -6856,7 +6856,7 @@ iframe[src*="soundcloud"] {
   -webkit-box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.4);
           box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.4); }
   .site-header.affix + .site-content {
-    padding-top: 90px; }
+    padding-top: 115px; }
   .site-header-icons {
     margin: 33px 0 0 15px; }
     .site-header-icons a {
@@ -7338,3 +7338,256 @@ object {
     position: static; }
   .site-header.affix + .site-content {
     padding-top: 0; } }
+
+.page-template-page-liberty body {
+  color: #383838; }
+
+.page-template-page-liberty #page {
+  background-color: transparent; }
+
+.page-template-page-liberty .control-label, .page-template-page-liberty .radio-inline {
+  color: #5a88b8; }
+
+.page-template-page-liberty small {
+  font-size: 85%; }
+
+.page-template-page-liberty .form-control {
+  border-radius: 4px; }
+
+.page-template-page-liberty h1.entry-title {
+  display: none; }
+
+.liberty-branding {
+  position: relative;
+  float: left;
+  margin-right: 60px; }
+  .liberty-branding:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .liberty-branding .wp-caption {
+    padding-top: 45px;
+    font-size: 17px;
+    font-style: normal;
+    line-height: 1.3; }
+    .liberty-branding .wp-caption-text {
+      text-align: left;
+      padding-right: 30px; }
+    .liberty-branding .wp-caption.alignleft {
+      display: block; }
+
+.liberty-intro {
+  font-size: 24px;
+  font-weight: 400;
+  color: #854a74;
+  line-height: 1.2;
+  margin: 0;
+  font-family: "Helvetica Neue", helvetica, sans-serif; }
+
+.liberty-logo {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.liberty-form-container {
+  max-width: 700px;
+  position: relative; }
+
+.liberty-form-header {
+  font-size: 28px;
+  font-weight: 600;
+  color: #854a74;
+  line-height: 1.2;
+  margin: 40px 0 20px;
+  font-family: "Helvetica Neue", helvetica, sans-serif; }
+
+.liberty-tagline {
+  font-family: "Helvetica Neue", helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #8aadd2;
+  margin: 0 0 30px; }
+
+.liberty-features {
+  color: #854a74;
+  font-weight: 700;
+  font-size: 17px;
+  list-style: none;
+  margin-left: 35px;
+  margin-top: 40px; }
+  .liberty-features li {
+    padding-top: 10px;
+    margin-bottom: 15px; }
+
+.liberty-more-info {
+  background: url(/wp-content/themes/fmcna-simona/images/liberty/liberty-swoosh.png) no-repeat right bottom;
+  margin-bottom: 30px;
+  padding-bottom: 1px;
+  position: relative; }
+
+.liberty-call {
+  font-size: 21px;
+  color: #8aadd2; }
+
+.liberty-hr {
+  height: 10px;
+  margin: 0;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  background: #854a74;
+  background: -webkit-gradient(linear, left top, right top, from(#8aadd2), color-stop(50%, #fff4d5), to(#854a74));
+  background: linear-gradient(to right, #8aadd2 0%, #fff4d5 50%, #854a74 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8aadd2', endColorstr='#854a74', GradientType=1 ); }
+
+.liberty-btn {
+  border: 6px solid transparent;
+  position: relative;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#be6da7), to(#854a74)) #854a74;
+  background: linear-gradient(#be6da7, #854a74) #854a74;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{$libertyPurplePale}', endColorstr='{$libertyPurple}', GradientType=0 );
+  background-clip: padding-box;
+  text-transform: none; }
+  .liberty-btn:hover, .liberty-btn:active, .liberty-btn:focus, .liberty-btnhover:focus, .liberty-btn:hover:active {
+    border: 6px solid transparent;
+    position: relative;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    opacity: 1;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e59fd1), to(#be6da7)) #be6da7;
+    background: linear-gradient(#e59fd1, #be6da7) #be6da7;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{$libertyPurplePale}', endColorstr='{$libertyPurple}', GradientType=0 );
+    background-clip: padding-box; }
+  .liberty-btn::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    border-radius: 8px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#854a74), to(#be6da7));
+    background-image: linear-gradient(#854a74, #be6da7);
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px; }
+
+.liberty-icon {
+  background-position: 510px center; }
+  .liberty-icon-arrow {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-arrow.svg");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-arrow.svg', sizingMethod='scale'); }
+  .liberty-icon-flextime {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-flextime.svg");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-flextime.svg', sizingMethod='scale'); }
+  .liberty-icon-drain {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-drain.svg");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-drain.svg', sizingMethod='scale'); }
+  .liberty-icon-sound {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-sound.svg");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-sound.svg', sizingMethod='scale'); }
+  .liberty-icon-checkmark {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-checkmark.svg");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-checkmark.svg', sizingMethod='scale'); }
+  .liberty-icon-headset {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-headset.svg");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-headset.svg', sizingMethod='scale'); }
+  .liberty-icon-portable {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-portable.svg");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-portable.svg', sizingMethod='scale'); }
+
+.no-svg .liberty-icon-arrow {
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-arrow.png");
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-arrow.png', sizingMethod='scale'); }
+
+.no-svg .liberty-icon-flextime {
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-flextime.png");
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-flextime.png', sizingMethod='scale'); }
+
+.no-svg .liberty-icon-drain {
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-drain.png");
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-drain.png', sizingMethod='scale'); }
+
+.no-svg .liberty-icon-sound {
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-sound.png");
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-sound.png', sizingMethod='scale'); }
+
+.no-svg .liberty-icon-checkmark {
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-checkmark.png");
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-checkmark.png', sizingMethod='scale'); }
+
+.no-svg .liberty-icon-headset {
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-headset.png");
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-headset.png', sizingMethod='scale'); }
+
+.no-svg .liberty-icon-portable {
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-portable.png");
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-portable.png', sizingMethod='scale'); }
+
+@media (max-width: 992px) {
+  .liberty-branding {
+    float: none;
+    margin: 0; }
+  .liberty-features {
+    margin-top: 0;
+    margin-left: 0; }
+    .liberty-features li {
+      margin-bottom: 10px;
+      padding-left: 60px; }
+  .liberty-icon {
+    background-position: left center; } }
+
+@media (max-width: 768px) {
+  .liberty-icon {
+    background-position: left center; }
+  .liberty-features {
+    margin-left: 0; }
+    .liberty-features li {
+      padding-left: 65px; }
+  .liberty-branding .wp-caption.alignleft {
+    float: none; } }
+
+@media (max-width: 500px) {
+  .liberty-logo {
+    position: relative; }
+  .liberty-hero {
+    margin-top: -30px; }
+  .liberty-branding .wp-caption {
+    padding: 0; } }
