@@ -6351,9 +6351,7 @@ a:active {
 
 #content {
   z-index: 1;
-  position: relative;
-  margin-bottom: 120px;
-  padding-bottom: 60px; }
+  position: relative; }
 
 .excerpt-links {
   color: #dcdcdc;
@@ -6901,6 +6899,70 @@ iframe[src*="soundcloud"] {
 .admin-bar .site-header.affix {
   top: 32px; }
 
+#primary:before, #primary:after {
+  content: " ";
+  display: table; }
+
+#primary:after {
+  clear: both; }
+
+header.hero {
+  background: rgba(14, 37, 90, 0.4) url("http://vccw.test/wp-content/uploads/2018/01/LP-Hero.png") 0 0 no-repeat;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  z-index: 1; }
+  header.hero:before, header.hero:after {
+    content: " ";
+    display: table; }
+  header.hero:after {
+    clear: both; }
+  header.hero:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: inherit;
+    content: ' ';
+    display: block;
+    z-index: 2; }
+  header.hero .hero-wrapper {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    z-index: 9; }
+    header.hero .hero-wrapper:before, header.hero .hero-wrapper:after {
+      content: " ";
+      display: table; }
+    header.hero .hero-wrapper:after {
+      clear: both; }
+    header.hero .hero-wrapper .hero-left-wrapper {
+      width: 75%; }
+      header.hero .hero-wrapper .hero-left-wrapper .hero-breadcrumbs-container .breadcrumb-container ul li {
+        color: white; }
+        header.hero .hero-wrapper .hero-left-wrapper .hero-breadcrumbs-container .breadcrumb-container ul li a {
+          color: white; }
+        header.hero .hero-wrapper .hero-left-wrapper .hero-breadcrumbs-container .breadcrumb-container ul li .separator:last-child {
+          display: none; }
+      header.hero .hero-wrapper .hero-left-wrapper .hero-logo-container {
+        padding: 0 13px;
+        margin: 2em 0; }
+        header.hero .hero-wrapper .hero-left-wrapper .hero-logo-container .hero-partner-name {
+          color: white;
+          font-weight: bold;
+          vertical-align: super; }
+      header.hero .hero-wrapper .hero-left-wrapper .hero-text-container {
+        color: white;
+        padding: 0 13px;
+        width: 80%;
+        margin: 2em 0 4em 0; }
+        header.hero .hero-wrapper .hero-left-wrapper .hero-text-container h1 {
+          font-weight: normal;
+          margin: 0; }
+
 /**
  * Slider with header images.
  */
@@ -7409,8 +7471,52 @@ object {
       clear: both; }
   .partner-social-icon-left {
     float: left; }
+    .partner-social-icon-left:before, .partner-social-icon-left:after {
+      content: " ";
+      display: table; }
+    .partner-social-icon-left:after {
+      clear: both; }
   .partner-social-icon-right {
     float: right; }
+
+.social-share:before, .social-share:after {
+  content: " ";
+  display: table; }
+
+.social-share:after {
+  clear: both; }
+
+.social-share-inner-wrapper {
+  display: block;
+  float: right;
+  margin-top: 2em; }
+  .social-share-inner-wrapper .social-share-text {
+    vertical-align: super; }
+  .social-share-inner-wrapper .social-share-text, .social-share-inner-wrapper .social-share-icon-wrapper {
+    display: inline-block; }
+  .social-share-inner-wrapper .divider {
+    display: inline-block;
+    font-size: 2em;
+    line-height: 1em;
+    margin: 0 0.2em; }
+  .social-share-inner-wrapper .social-share-print-wrapper {
+    display: inline-block;
+    float: right; }
+    .social-share-inner-wrapper .social-share-print-wrapper:before, .social-share-inner-wrapper .social-share-print-wrapper:after {
+      content: " ";
+      display: table; }
+    .social-share-inner-wrapper .social-share-print-wrapper:after {
+      clear: both; }
+    .social-share-inner-wrapper .social-share-print-wrapper .print-text, .social-share-inner-wrapper .social-share-print-wrapper .print-icon {
+      display: inline-block; }
+    .social-share-inner-wrapper .social-share-print-wrapper .print-text {
+      margin-top: 1em; }
+
+.legal-section {
+  background-color: #F5F5F5; }
+  .legal-section-inner-wrapper {
+    margin: 0 auto;
+    width: 90%; }
 
 /*--------------------------------------------------------------
 # Footer
