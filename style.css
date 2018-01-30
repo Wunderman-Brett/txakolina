@@ -6962,6 +6962,26 @@ header.hero {
         header.hero .hero-wrapper .hero-left-wrapper .hero-text-container h1 {
           font-weight: normal;
           margin: 0; }
+    header.hero .hero-wrapper .hero-right-wrapper {
+      position: relative;
+      top: 8em;
+      right: 8em; }
+      header.hero .hero-wrapper .hero-right-wrapper .hero-cta-container {
+        background: #0069e3;
+        /* Old browsers */
+        background: -moz-linear-gradient(bottom, #0069e3 0%, #80c3f3 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(bottom, #0069e3 0%, #80c3f3 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to top, #0069e3 0%, #80c3f3 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0069e3', endColorstr='#80c3f3',GradientType=0 );
+        /* IE6-9 */
+        border: 1px solid white;
+        color: white;
+        padding: 0.5em 1.8em; }
+        header.hero .hero-wrapper .hero-right-wrapper .hero-cta-container a {
+          color: white; }
 
 /**
  * Slider with header images.

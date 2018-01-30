@@ -29,7 +29,7 @@ get_header(); ?>
                         </div>
                         <div class="hero-right-wrapper alignright">
                             <div class="hero-cta-container">
-
+                                <a href="#">Dolor Sit Amet</a>
                             </div>
                         </div>
                     </div>
