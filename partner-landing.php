@@ -34,6 +34,33 @@ get_header(); ?>
                         </div>
                     </div>
                 </header>
+                <div class="value-prop">
+                    <div class="value-prop-inner-wrapper">
+                        <div class="value-prop-card">
+                            <h3>VALUE PROPOSITION #1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#">Learn More ></a>
+                            <div id="border"></div>
+                        </div>
+                        <div class="value-prop-card">
+                            <h3>VALUE PROPOSITION #2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#">Learn More ></a>
+                            <div id="border"></div>
+                        </div>
+                        <div class="value-prop-card">
+                            <h3>VALUE PROPOSITION #3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#">Learn More ></a>
+                            <div id="border"></div>
+                        </div>
+                        <div class="value-prop-card">
+                            <h3>VALUE PROPOSITION #4</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#">Learn More ></a>
+                        </div>
+                    </div>
+                </div>
 
             </main><!-- #main -->
         </div><!-- #primary -->
