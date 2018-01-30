@@ -22,8 +22,29 @@
 			<?php get_template_part('template-parts/content-sections/main-content'); ?>
 		</div>
 
-	<?php get_template_part('template-parts/content-sections/full-width-callout'); ?>
-	<?php get_template_part('template-parts/content-sections/half-width-callout'); ?>
+		<?php if ( have_rows('tab') ) : $index = 0; ?>
+			<ul class="nav nav-tabs">
+				<?php while ( have_rows('tab') ) : the_row();   ?>
+					<li role="presentation" class="<?php if ($index == 0) { echo 'active'; } ?>">
+						<a href="#<?php echo sanitize_title(get_sub_field('tab_label')); ?>"
+							aria-controls="<?php echo sanitize_title(get_sub_field('tab_label')); ?>"
+							data-toggle="tab"><?php the_sub_field('tab_label'); ?></a>
+					</li>
+				<?php $index++; endwhile; ?>
+			</ul>
+		<?php endif; ?>
+
+		<?php if (have_rows('tab')) : $index = 0; ?>
+			<div class="tab-content">
+				<?php while ( have_rows('tab') ) : the_row(); ?>
+					<div class="entry-content tab-pane fade <?php if ($index == 0) { echo 'in active'; } ?>" id="<?php echo sanitize_title(get_sub_field('tab_label')); ?>" role="tabpanel">
+						<?php the_sub_field('tab_content'); ?>
+					</div>
+				<?php $index++; endwhile; ?>
+			</div>
+		<?php endif; ?>
+
+
 	<?php if (get_field('page_small_text')) { ?>
 		<small class="entry-small-text"><?php the_field('page_small_text'); ?></small>
 	<?php } ?>

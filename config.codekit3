@@ -1856,6 +1856,13 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/inc\/custom-fields-callouts.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/custom-fields-callouts.php",
+		"oF": 0
+		},
 	"\/inc\/custom-fields-front-page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1882,6 +1889,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/inc\/custom-fields-pages.php",
+		"oF": 0
+		},
+	"\/inc\/custom-fields-tabs.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/custom-fields-tabs.php",
 		"oF": 0
 		},
 	"\/inc\/customizer.php": {
@@ -2545,6 +2559,13 @@
 		"oAP": "\/page-sidebar.php",
 		"oF": 0
 		},
+	"\/page-tabs.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-tabs.php",
+		"oF": 0
+		},
 	"\/page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2632,11 +2653,39 @@
 		"oAP": "\/template-parts\/content-post-nav.php",
 		"oF": 0
 		},
+	"\/template-parts\/content-sections\/full-width-callout.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-sections\/full-width-callout.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-sections\/half-width-callout.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-sections\/half-width-callout.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-sections\/main-content.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-sections\/main-content.php",
+		"oF": 0
+		},
 	"\/template-parts\/content-single.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/template-parts\/content-single.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-tabs.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-tabs.php",
 		"oF": 0
 		},
 	"\/template-parts\/content-video.php": {

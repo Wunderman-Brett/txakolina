@@ -6922,6 +6922,8 @@ iframe[src*="soundcloud"] {
 
 .site-description {
   position: absolute;
+  text-align: center;
+  line-height: 1.1;
   left: 50%;
   top: 50%;
   font-family: "HelveticaNeue";

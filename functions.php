@@ -154,6 +154,7 @@ require get_template_directory() . '/inc/txakolina-extras.php';
 
 // load custom fields
 require get_template_directory() . '/inc/custom-fields-pages.php';
+require get_template_directory() . '/inc/custom-fields-tabs.php';
 require get_template_directory() . '/inc/custom-fields-global.php';
 require get_template_directory() . '/inc/custom-fields-front-page.php';
 
