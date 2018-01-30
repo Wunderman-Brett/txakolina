@@ -28,8 +28,8 @@
     &-element{
         float: left;
         width: 25%;
-
         @include clearfix();
+
         &-inner-wrapper{
             &:hover{
                 background-color: #F5F4F4;
@@ -75,8 +75,59 @@
     }
     &-icon-left{
         float: left;
+
+        @include clearfix();
     }
     &-icon-right{
         float: right;
+    }
+}
+
+.social-share{
+    @include clearfix();
+    &-inner-wrapper{
+        display: block;
+        float: right;
+        margin-top: 2em;
+
+        .social-share-text{
+            vertical-align: super;
+        }
+        .social-share-icon-wrapper{
+            
+        }
+        .social-share-text, .social-share-icon-wrapper{
+            display: inline-block;
+        }
+
+        .divider{
+            display: inline-block;
+            font-size: 2em;
+            line-height: 1em;
+            margin: 0 0.2em;
+        }
+
+        .social-share-print-wrapper{
+            display: inline-block;
+            float: right;
+
+            @include clearfix();
+            
+            .print-text, .print-icon{
+                display: inline-block;
+            }
+            .print-text{
+                margin-top: 1em;
+            }
+        }
+
+    }
+}
+.legal-section{
+    background-color: #F5F5F5;
+
+    &-inner-wrapper{
+        margin: 0 auto;
+        width: 90%;
     }
 }
