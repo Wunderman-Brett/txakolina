@@ -21,7 +21,7 @@
 		<div class="row">
 			<?php get_template_part('template-parts/content-sections/main-content'); ?>
 		</div>
-
+		<div class="tabs-wrapper">
 		<?php if ( have_rows('tab') ) : $index = 0; ?>
 			<ul class="nav nav-tabs">
 				<?php while ( have_rows('tab') ) : the_row();   ?>
@@ -43,6 +43,7 @@
 				<?php $index++; endwhile; ?>
 			</div>
 		<?php endif; ?>
+		</div>
 
 
 	<?php if (get_field('page_small_text')) { ?>

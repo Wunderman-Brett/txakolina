@@ -31,6 +31,15 @@
 			color: $grey-73;
 			max-width: 850px;
 		}
+		table {
+			color: $gray-dark;
+			font-size: 14px;
+			font-weight: normal;
+			li, p {
+				font-size: 14px;
+				color: $gray-dark;
+			}
+		}
 	}
 	&-small-text {
 		margin: 40px 0;
@@ -302,5 +311,10 @@
 			margin-top: 10px;
 		}
 	}
+}
 
+.tabs {
+	&-wrapper {
+		margin: 25px 0;
+	}
 }
