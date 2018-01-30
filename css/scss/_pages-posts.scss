@@ -11,24 +11,25 @@
 .entry {
 	&-content {
 		font-weight: 300;
-		strong {
+		strong, b {
 			color: #444;
 		}
 		p {
 			max-width: 850px;
 			color: $grey-73;
+			overflow: hidden;
 		}
 		ul, ol {
 			max-width: 850px;
 			color: $grey-73;
 			padding-left: 17px;
 			margin: 15px 0;
+			overflow: hidden;
 		}
 		li {
 			margin-bottom: 5px;
 		}
 		blockquote {
-			color: $grey-73;
 			max-width: 850px;
 		}
 		table {

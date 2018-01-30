@@ -3,16 +3,13 @@
 # Elements
 --------------------------------------------------------------*/
 
-body {
-}
-
 blockquote {
 	font-size: 18px;
 	font-style: italic;
 	margin-top: 20px;
 	padding: 0 30px 0.25em 40px;
 	position: relative;
-	color: $grey-9b;
+	color: $grey-73;
 	border-width: 0;
 	&:before {
 		display: block;

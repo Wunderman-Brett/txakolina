@@ -2667,6 +2667,13 @@
 		"oAP": "\/template-parts\/content-sections\/half-width-callout.php",
 		"oF": 0
 		},
+	"\/template-parts\/content-sections\/hero.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-sections\/hero.php",
+		"oF": 0
+		},
 	"\/template-parts\/content-sections\/main-content.php": {
 		"cB": 0,
 		"ft": 8192,

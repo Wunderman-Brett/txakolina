@@ -6,13 +6,48 @@ acf_add_local_field_group(array(
 	'title' => 'Page Fields',
 	'fields' => array(
 		array(
+			'key' => 'field_5a70bcaeae3c9',
+			'label' => 'Features',
+			'name' => 'features',
+			'type' => 'checkbox',
+			'instructions' => 'Check any features needed for this page',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'choices' => array(
+				'Smaller H1' => 'Smaller H1',
+				'Hero' => 'Hero',
+				'Small Footer Text' => 'Small Footer Text',
+				'Two Column Layout' => 'Two Column Layout',
+			),
+			'allow_custom' => 0,
+			'save_custom' => 0,
+			'default_value' => array(
+			),
+			'layout' => 'vertical',
+			'toggle' => 0,
+			'return_format' => 'value',
+		),
+		array(
 			'key' => 'field_5a6b689298aa8',
 			'label' => 'Smaller Size Heading',
 			'name' => 'smaller_size_heading',
 			'type' => 'true_false',
 			'instructions' => 'If selected, the page H1 will display at 38px instead of 58px.',
 			'required' => 0,
-			'conditional_logic' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5a70bcaeae3c9',
+						'operator' => '==',
+						'value' => 'Smaller H1',
+					),
+				),
+			),
 			'wrapper' => array(
 				'width' => '',
 				'class' => '',
@@ -31,7 +66,15 @@ acf_add_local_field_group(array(
 			'type' => 'text',
 			'instructions' => '',
 			'required' => 0,
-			'conditional_logic' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5a70bcaeae3c9',
+						'operator' => '==',
+						'value' => 'Small Footer Text',
+					),
+				),
+			),
 			'wrapper' => array(
 				'width' => '',
 				'class' => '',
@@ -50,7 +93,15 @@ acf_add_local_field_group(array(
 			'type' => 'repeater',
 			'instructions' => 'Right column boxes will create a two column layout. Thumbnails, text, and call to action buttons can be put in these boxes',
 			'required' => 0,
-			'conditional_logic' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5a70bcaeae3c9',
+						'operator' => '==',
+						'value' => 'Two Column Layout',
+					),
+				),
+			),
 			'wrapper' => array(
 				'width' => '',
 				'class' => '',
@@ -60,7 +111,7 @@ acf_add_local_field_group(array(
 			'min' => 0,
 			'max' => 0,
 			'layout' => 'table',
-			'button_label' => '',
+			'button_label' => 'Add Box',
 			'sub_fields' => array(
 				array(
 					'key' => 'field_5a6b69d8e8a2e',
@@ -160,6 +211,65 @@ acf_add_local_field_group(array(
 					'maxlength' => '',
 				),
 			),
+		),
+		array(
+			'key' => 'field_5a70bbe424bca',
+			'label' => 'Hero Image',
+			'name' => 'hero_image',
+			'type' => 'image',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5a70bcaeae3c9',
+						'operator' => '==',
+						'value' => 'Hero',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'return_format' => 'array',
+			'preview_size' => 'medium',
+			'library' => 'all',
+			'min_width' => '',
+			'min_height' => '',
+			'min_size' => '',
+			'max_width' => '',
+			'max_height' => '',
+			'max_size' => '',
+			'mime_types' => '',
+		),
+		array(
+			'key' => 'field_5a70bc1324bcb',
+			'label' => 'Hero overlay text',
+			'name' => 'hero_overlay_text',
+			'type' => 'textarea',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5a70bcaeae3c9',
+						'operator' => '==',
+						'value' => 'Hero',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'maxlength' => '',
+			'rows' => 6,
+			'new_lines' => '',
 		),
 	),
 	'location' => array(

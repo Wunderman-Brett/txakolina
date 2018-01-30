@@ -18,9 +18,8 @@
 	<?php } ?>
 
 	<div class="">
-		<div class="row">
-			<?php get_template_part('template-parts/content-sections/main-content'); ?>
-		</div>
+		<?php get_template_part('template-parts/content-sections/hero') ?>
+		<?php get_template_part('template-parts/content-sections/main-content'); ?>
 		<div class="tabs-wrapper">
 		<?php if ( have_rows('tab') ) : $index = 0; ?>
 			<ul class="nav nav-tabs">

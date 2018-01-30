@@ -22,7 +22,7 @@ acf_add_local_field_group(array(
 			'min' => 0,
 			'max' => 0,
 			'layout' => 'block',
-			'button_label' => '',
+			'button_label' => 'Add Tab',
 			'sub_fields' => array(
 				array(
 					'key' => 'field_5a7081267af0c',
