@@ -5894,22 +5894,19 @@ button.close {
 blockquote {
   font-size: 18px;
   font-style: italic;
-  width: 100%;
-  margin: 0.25em 0;
-  padding: 0.25em 40px;
-  line-height: 1.625;
+  padding: 0 30px 0.25em 40px;
   position: relative;
-  color: #9b9b9b; }
+  color: #9b9b9b;
+  border-width: 0; }
 
 blockquote:before {
   display: block;
-  content: "\f10d";
-  font-family: 'FontAwesome';
-  font-size: 30px;
+  content: "\201c";
+  font-family: Georgia;
+  color: #656565;
+  font-size: 70px;
   position: absolute;
-  left: 0;
-  top: -10px;
-  opacity: 0.6; }
+  left: 0; }
 
 blockquote cite {
   color: #dcdcdc;
@@ -6246,17 +6243,23 @@ a:active {
 #main {
   margin-top: 35px; }
 
-.entry-content p {
-  max-width: 850px;
-  color: #737373;
+.entry-content {
   font-weight: 300; }
-
-.entry-content ul {
-  padding-left: 17px;
-  margin: 15px 0; }
-
-.entry-content li {
-  margin-bottom: 5px; }
+  .entry-content strong {
+    color: #444; }
+  .entry-content p {
+    max-width: 850px;
+    color: #737373; }
+  .entry-content ul, .entry-content ol {
+    max-width: 850px;
+    color: #737373;
+    padding-left: 17px;
+    margin: 15px 0; }
+  .entry-content li {
+    margin-bottom: 5px; }
+  .entry-content blockquote {
+    color: #737373;
+    max-width: 850px; }
 
 .entry-small-text {
   margin: 40px 0;
@@ -6454,6 +6457,45 @@ a:active {
 
 .required {
   font-size: 16px; }
+
+.cta-block {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  background-color: #dcdcdc; }
+  .cta-block .btn {
+    padding-left: 45px;
+    padding-right: 45px; }
+  .cta-block .phoneCall {
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
+    text-align: right; }
+    .cta-block .phoneCall a {
+      font-weight: normal; }
+
+@media (max-width: 768px) {
+  .cta-block {
+    display: block;
+    text-align: center;
+    padding-top: 20px; }
+    .cta-block .phoneCall, .cta-block .btn {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 300px;
+      margin-top: 10px; } }
 
 /**
  * Categories & author.
