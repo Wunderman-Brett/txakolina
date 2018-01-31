@@ -3,12 +3,26 @@
     flex-direction:row;
     .adcs-col0 {
         width:75%;
+        margin:40px 10px 0;
+        padding:30px;
+        h2 {
+            text-transform:Uppercase;
+            font-family:"Lato", sans-serif;
+            font-size:30px;
+            line-height:36px;
+        }
+        p{
+            font-family:"Lato", sans-serif;
+            font-size:18px;
+            line-height:24px;
+        }
     }
     .adcs-col1 {
         width:25%;
         text-align:center;
-        padding:20px;
-        margin-top:30px;
+        margin:40px 10px 0;
+        padding:30px;
+        border-left:1px solid #003D99;
         .quoteCont{
             width:100%;
             img.first-quote {
@@ -17,13 +31,19 @@
                 top:-20px;
             }
             p {
-                width:71%;
+                width: 95%;
                 margin:0 auto;
+                color:#13275A;
+                font-family:"Lato", sans-serif;
+                font-style: italic;
+                font-size:22px;
+                line-height:26px;
             }
             img.last-quote {
                 float:right;
                 position:relative;
                 top: -20px;
+                z-index:-1;
             }
         }
         .bioCont{
