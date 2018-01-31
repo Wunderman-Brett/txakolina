@@ -1,0 +1,36 @@
+.ArticleContentContainer {
+    display:flex;
+    flex-direction:row;
+    .adcs-col0 {
+        width:75%;
+    }
+    .adcs-col1 {
+        width:25%;
+        text-align:center;
+        padding:20px;
+        margin-top:30px;
+        .quoteCont{
+            width:100%;
+            img.first-quote {
+                float:left;
+                position:relative;
+                top:-20px;
+            }
+            p {
+                width:71%;
+                margin:0 auto;
+            }
+            img.last-quote {
+                float:right;
+                position:relative;
+                top: -20px;
+            }
+        }
+        .bioCont{
+            text-align:center;
+            img {
+                margin:0 auto;
+            }
+        }
+    }
+}
