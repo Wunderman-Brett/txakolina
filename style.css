@@ -5898,16 +5898,22 @@ blockquote {
   padding: 0 30px 0.25em 40px;
   position: relative;
   color: #737373;
-  border-width: 0; }
-  blockquote:before {
-    display: block;
-    content: "\201c";
+  border-width: 0;
+  left: -40px; }
+  blockquote:before, blockquote:after {
     font-family: Georgia;
     color: #656565;
     font-size: 70px;
     position: absolute;
-    margin-top: -28px;
-    left: 0; }
+    line-height: 20px; }
+  blockquote:before {
+    content: "\201c";
+    left: 0;
+    top: 15px; }
+  blockquote:after {
+    content: "\201d";
+    right: 0;
+    bottom: -10px; }
 
 blockquote cite {
   color: #dcdcdc;
@@ -6024,7 +6030,7 @@ a:active {
   text-align: right;
   width: 50%; }
 
-.btn-cta {
+.btn-cta, .btn-primary {
   background-color: #0075d4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#249dff), to(#0075d4));
   background-image: linear-gradient(#249dff 0%, #0075d4 100%);
@@ -6037,7 +6043,7 @@ a:active {
   font-size: 15px;
   -webkit-transition: all 0.33s ease;
   transition: all 0.33s ease; }
-  .btn-cta:hover {
+  .btn-cta:hover, .btn-primary:hover {
     color: white;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#41a9fe), to(#249dff));
     background-image: linear-gradient(#41a9fe 0%, #249dff 100%); }

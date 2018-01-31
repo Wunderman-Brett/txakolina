@@ -11,15 +11,23 @@ blockquote {
 	position: relative;
 	color: $grey-73;
 	border-width: 0;
-	&:before {
-		display: block;
-		content: "\201c";
+	left: -40px;
+	&:before, &:after {
 		font-family: Georgia;
 		color: $grey-65;
 		font-size: 70px;
 		position: absolute;
-		margin-top: -28px;
+		line-height: 20px;
+	}
+	&:before {
+		content: "\201c";
 		left: 0;
+		top: 15px;
+  }
+	&:after {
+		content: "\201d";
+		right: 0;
+		bottom: -10px;
 	}
 }
 
