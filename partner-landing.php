@@ -88,6 +88,7 @@ get_header(); ?>
         </div><!-- #primary -->
     </div>
 
+    <?php get_template_part('template-parts/partner','article_detail_content'); ?>
     <?php get_template_part('template-parts/partner','bottom_nav'); ?>
 </div>
 <?php get_footer(); ?>
