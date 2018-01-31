@@ -6685,18 +6685,6 @@ a:active {
   font-size: 20px;
   color: white; }
 
-iframe[src*="mixcloud"] {
-  max-height: 120px;
-  max-width: 100%;
-  width: 100%;
-  margin: 0; }
-
-iframe[src*="soundcloud"] {
-  max-height: 240px;
-  max-width: 100%;
-  width: 100%;
-  margin: 0; }
-
 .gallery-caption {
   display: none; }
 
@@ -7333,8 +7321,7 @@ object {
 ## Captions
 --------------------------------------------------------------*/
 .wp-caption {
-  font-size: small;
-  font-style: italic;
+  font-size: 15px;
   max-width: 100%; }
 
 .wp-caption img[class*="wp-image-"] {
@@ -7346,7 +7333,8 @@ object {
   margin: 0.8075em 0; }
 
 .wp-caption-text {
-  text-align: center; }
+  text-align: center;
+  color: #202020; }
 
 /*--------------------------------------------------------------
 ## Galleries
@@ -7653,3 +7641,17 @@ object {
     margin-top: -30px; }
   .liberty-branding .wp-caption {
     padding: 0; } }
+
+.ui-accordion .ui-accordion-content p, .ui-accordion .ui-accordion-content li {
+  font-size: 14px;
+  line-height: 1.6; }
+
+.ui-accordion .ui-accordion-content p {
+  margin-bottom: 10px !important;
+  margin-left: 15px !important; }
+
+.ui-accordion .ui-accordion-content ul {
+  margin-left: 17px; }
+
+.ui-widget-content a {
+  color: #003d99; }

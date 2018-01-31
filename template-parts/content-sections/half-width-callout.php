@@ -11,8 +11,12 @@
         }
       }
       echo esc_html(the_sub_field('half_width_html')); ?>
+      <?php if (get_sub_field('half_width_heading')) : ?>
       <h3><?php the_sub_field('half_width_heading'); ?></h3>
+      <?php endif; ?>
+      <?php if (get_sub_field('half_width_link')) : ?>
       <a href="<?php the_sub_field('half_width_link'); ?>" class="morelink"><?php the_sub_field('half_width_link_text'); ?></a>
+    <?php endif; ?>
     </div>
   <?php endwhile; ?>
   </div>
