@@ -61,7 +61,29 @@ get_header(); ?>
                         </div>
                     </div>
                 </div>
-
+                <div class="faq">
+                    <div class="faq-inner-wrapper">
+                        <div class="faq-header-wrapper">
+                            <h3>Frequently Asked Questions</h3>
+                            <div class="divider"></div>
+                        </div>
+                        <div class="faq-snip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                        <div class="faq-questions-wrapper">
+                            <div class="faq-question-item">
+                                <a href="#" class="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt?</a>
+                            </div>
+                            <div class="faq-question-item">
+                                <a href="#" class="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt?</a>
+                            </div>
+                            <div class="faq-question-item">
+                                <a href="#" class="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt?</a>
+                            </div>
+                        </div>
+                        <div class="more-faq-wrapper">
+                            <a href="#" class="more-faq-link">More FAQs ></a>
+                        </div>
+                    </div>
+                </div>
             </main><!-- #main -->
         </div><!-- #primary -->
     </div>
