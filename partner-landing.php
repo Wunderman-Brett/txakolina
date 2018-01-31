@@ -20,7 +20,7 @@ get_header(); ?>
                                 ?>
                             </div>
                             <div class="hero-logo-container">
-                                <img class="hero-partner-logo" src="http://placecorgi.com/70/40" alt="">
+                                <img class="hero-partner-logo" src="https://fmcnaqa1.wpengine.com/wp-content/uploads/2018/01/NCP-logo@2x.png" alt="">
                                 <span class="hero-partner-name">National Cardiovascular Partners</span>
                             </div>
                             <div class="hero-text-container">

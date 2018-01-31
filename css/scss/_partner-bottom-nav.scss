@@ -4,26 +4,36 @@
 .partner-bottom-nav{
     &-header-wrapper{
         margin: 0 auto;
-        padding-bottom: 2em;
+        padding-bottom: 1em;
         text-transform: uppercase;
         width: 60%;
+        position: relative;
+        .divider{
+                position: absolute;
+                bottom: 0;
+                left: 44%;
+                right: 40%;
+                width: 13%;
+                border-bottom: 1px solid #003D99;
+        }
     }
     &-title{
         text-align: center;
-
-        span{
-            border-bottom: 1px solid black;
-            display: inline-block;
-            padding-bottom: 20px;
-        }
+        margin-bottom: 0;
     }
     &-snip{
+        width: 60%;
         text-align: center;
+        margin: 0 auto;
+        padding: 2em 0;
     }
     &-wrapper{
         margin-bottom: 4em;
 
         @include clearfix();
+    }
+    .parnter-bottom-nav-snip{
+        text-align: center;
     }
     &-element{
         float: left;
@@ -72,6 +82,10 @@
         width: 20%;
 
         @include clearfix();
+
+        img{
+            max-width: 60px;
+        }
     }
     &-icon-left{
         float: left;

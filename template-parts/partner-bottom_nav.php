@@ -10,8 +10,9 @@
 <div class="partner-bottom-nav">
     <div class="partner-bottom-nav-header-wrapper">
         <h3 class="partner-bottom-nav-title">Bottom <span>Navigation</span> Header</h3>
-        <p class="partner-bottom-nav-snip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="divider"></div>
     </div>
+    <p class="partner-bottom-nav-snip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     <div class="partner-bottom-nav-wrapper">
         <div class="partner-bottom-nav-element">
             <div class="partner-bottom-nav-element-inner-wrapper">
@@ -47,8 +48,8 @@
     <div class="partner-social-inner-wrapper">
         <h3 class="partner-social-cta-text">Follow National Cardiovascular Partners</h3>
         <div class="partner-social-icon-wrapper">
-            <img class="partner-social-icon-left" src="https://picsum.photos/60" alt="">
-            <img class="partner-social-icon-right" src="http://placecorgi.com/60/60" alt="">
+            <img class="partner-social-icon-left" src="https://fmcnaqa1.wpengine.com/wp-content/uploads/2018/01/Twitter-logo.png" alt="">
+            <img class="partner-social-icon-right" src="https://fmcnaqa1.wpengine.com/wp-content/uploads/2018/01/linkedIn-logo.png" alt="">
         </div>
     </div>
 </div>

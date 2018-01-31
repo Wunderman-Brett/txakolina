@@ -22,9 +22,9 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
     </div>
     <div class="adcs-col adcs-col1">
         <div class="quoteCont">
-            <img class="first-quote" src="http://vccw.test/wp-content/uploads/2018/01/quote-mark-left.jpg" alt="Open Quote"/>    
+            <img class="first-quote" src="https://fmcnaqa1.wpengine.com/wp-content/uploads/2018/01/quote-mark-left.png" alt="Open Quote"/>    
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <img class="last-quote" src="http://vccw.test/wp-content/uploads/2018/01/quote-mark-right.jpg" alt="Close Quote"/>
+            <img class="last-quote" src="https://fmcnaqa1.wpengine.com/wp-content/uploads/2018/01/quote-mark-right.png" alt="Close Quote"/>
             <br/>
         </div>
         <div class="bioCont">
@@ -32,7 +32,7 @@ occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
         <img src="http://vccw.test/wp-content/uploads/2018/01/HPheadshot.jpg" alt="Doctor Headshot"/>
             <br/><br/>
             <p>-Name</p>
-            <a href="#">Read More ><a>
+            <a href="#">Read More ></a>
         </div>
     </div>
 </div>
