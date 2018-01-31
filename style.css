@@ -6966,10 +6966,9 @@ header.hero {
       header.hero .hero-wrapper .hero-right-wrapper .hero-cta-container {
         background: #0069e3;
         /* Old browsers */
-        background: -moz-linear-gradient(bottom, #0069e3 0%, #80c3f3 100%);
         /* FF3.6-15 */
-        background: -webkit-linear-gradient(bottom, #0069e3 0%, #80c3f3 100%);
         /* Chrome10-25,Safari5.1-6 */
+        background: -webkit-gradient(linear, left bottom, left top, from(#0069e3), to(#80c3f3));
         background: linear-gradient(to top, #0069e3 0%, #80c3f3 100%);
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0069e3', endColorstr='#80c3f3',GradientType=0 );
@@ -7727,3 +7726,46 @@ footer {
     .value-prop-inner-wrapper .value-prop-card p {
       padding: 25px 0;
       margin: 0; }
+
+.faq-inner-wrapper .faq-header-wrapper {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0.5em 0; }
+  .faq-inner-wrapper .faq-header-wrapper h3 {
+    margin: 0.5em 0; }
+  .faq-inner-wrapper .faq-header-wrapper .divider {
+    position: absolute;
+    bottom: 0;
+    left: 44%;
+    right: 40%;
+    width: 13%;
+    border-bottom: 1px solid #003D99; }
+
+.faq-inner-wrapper .faq-snip {
+  text-align: center;
+  width: 75%;
+  margin: 1em auto; }
+
+.faq-inner-wrapper .faq-questions-wrapper {
+  margin: 2em auto;
+  width: 90%; }
+  .faq-inner-wrapper .faq-questions-wrapper:before, .faq-inner-wrapper .faq-questions-wrapper:after {
+    content: " ";
+    display: table; }
+  .faq-inner-wrapper .faq-questions-wrapper:after {
+    clear: both; }
+  .faq-inner-wrapper .faq-questions-wrapper .faq-question-item {
+    float: right;
+    width: 33%;
+    padding: 0 2em; }
+    .faq-inner-wrapper .faq-questions-wrapper .faq-question-item:last-child {
+      padding: 0 0 0 2em; }
+
+.faq-inner-wrapper .more-faq-wrapper {
+  margin: 1em 0; }
+  .faq-inner-wrapper .more-faq-wrapper .more-faq-link {
+    display: block;
+    float: right;
+    font-weight: bold; }
