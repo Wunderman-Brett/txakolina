@@ -24,9 +24,9 @@ if ( ! function_exists( 'txakolina_setup' ) ) :
 		add_theme_support( 'title-tag' );
 
 		add_theme_support( 'post-thumbnails' );
-		set_post_thumbnail_size( 800, 500, array( 'center', 'top' ) );
-		add_image_size( 'txakolina-index-thumb', 390, 450, array( 'center', 'top' ) );
-		add_image_size( 'txakolina-gallery-thumb', 800, 600, array( 'center', 'top' ) );
+		// set_post_thumbnail_size( 800, 500, array( 'center', 'top' ) );
+		// add_image_size( 'txakolina-index-thumb', 390, 450, array( 'center', 'top' ) );
+		// add_image_size( 'txakolina-gallery-thumb', 800, 600, array( 'center', 'top' ) );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -155,6 +155,7 @@ require get_template_directory() . '/inc/txakolina-extras.php';
 // load custom fields
 require get_template_directory() . '/inc/custom-fields-pages.php';
 require get_template_directory() . '/inc/custom-fields-tabs.php';
+require get_template_directory() . '/inc/custom-fields-callouts.php';
 require get_template_directory() . '/inc/custom-fields-global.php';
 require get_template_directory() . '/inc/custom-fields-front-page.php';
 
