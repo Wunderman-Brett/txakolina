@@ -11,7 +11,10 @@
         <?php } ?>
         <div class="full-width-callout-html">
           <h2><?php the_sub_field('full_width_heading'); ?></h2>
+          <?php the_sub_field('full_width_html'); ?>
+          <?php if (get_sub_field('full_width_link')) : ?>
           <a href="<?php the_sub_field('full_width_link'); ?>" class="morelink"><?php the_sub_field('full_width_link_text'); ?></a>
+          <?php endif; ?>
         </div>
       </div>
     </div>

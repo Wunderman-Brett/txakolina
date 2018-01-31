@@ -21,7 +21,7 @@ acf_add_local_field_group(array(
 			'collapsed' => '',
 			'min' => 0,
 			'max' => 0,
-			'layout' => 'table',
+			'layout' => 'row',
 			'button_label' => 'Add Full width Callout',
 			'sub_fields' => array(
 				array(
@@ -69,10 +69,10 @@ acf_add_local_field_group(array(
 				),
 				array(
 					'key' => 'field_5a6e43ac4baf3',
-					'label' => 'Offsite link?',
-					'name' => 'offsite_link',
-					'type' => 'true_false',
-					'instructions' => 'If selected, this will all the editor to enter any absolute URL, and the page will open the link in a new tab',
+					'label' => 'Full Width HTML',
+					'name' => 'full_width_html',
+					'type' => 'textarea',
+					'instructions' => 'Text here may be formatted with html',
 					'required' => 0,
 					'conditional_logic' => 0,
 					'wrapper' => array(
@@ -80,57 +80,20 @@ acf_add_local_field_group(array(
 						'class' => '',
 						'id' => '',
 					),
-					'message' => '',
-					'default_value' => 0,
-					'ui' => 0,
-					'ui_on_text' => '',
-					'ui_off_text' => '',
+					'default_value' => '',
+					'placeholder' => '',
+					'maxlength' => '',
+					'rows' => '',
+					'new_lines' => '',
 				),
 				array(
 					'key' => 'field_5a6a2697b250b',
 					'label' => 'Full width link',
 					'name' => 'full_width_link',
-					'type' => 'page_link',
-					'instructions' => '',
-					'required' => 0,
-					'conditional_logic' => array(
-						array(
-							array(
-								'field' => 'field_5a6e43ac4baf3',
-								'operator' => '!=',
-								'value' => '1',
-							),
-						),
-					),
-					'wrapper' => array(
-						'width' => '',
-						'class' => '',
-						'id' => '',
-					),
-					'post_type' => array(
-					),
-					'taxonomy' => array(
-					),
-					'allow_null' => 0,
-					'allow_archives' => 0,
-					'multiple' => 0,
-				),
-				array(
-					'key' => 'field_5a6e44af3987c',
-					'label' => 'Offsite full width link',
-					'name' => 'offsite_full_width_link',
 					'type' => 'url',
 					'instructions' => '',
 					'required' => 0,
-					'conditional_logic' => array(
-						array(
-							array(
-								'field' => 'field_5a6e43ac4baf3',
-								'operator' => '==',
-								'value' => '1',
-							),
-						),
-					),
+					'conditional_logic' => 0,
 					'wrapper' => array(
 						'width' => '',
 						'class' => '',
