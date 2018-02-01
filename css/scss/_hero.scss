@@ -1,0 +1,100 @@
+#primary{
+    @include clearfix();
+}
+
+header.hero{
+    background: rgba(14,37,90,0.4) url('https://fmcnaqa1.wpengine.com/wp-content/uploads/2018/01/ncp-home-hero@2x.png') 0 0 no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    z-index: 1;
+
+    @include clearfix();
+
+    &:before{
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background-color: inherit;
+        content: ' ';
+        display: block;
+        z-index: 2;
+    }
+    .hero-wrapper{
+        margin: 0 auto;
+        min-height: 20em;
+        position: relative;
+        width: 90%;    
+        z-index: 9;
+
+        @include clearfix();
+
+        .hero-left-wrapper{
+            width: 75%;
+
+            .hero-breadcrumbs-container{
+                .breadcrumb-container{
+                    ul{
+                        li{
+                            color: white;
+                            a{
+                                color: white;
+                            }
+                            .separator{
+                                &:last-child{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .hero-logo-container{
+                padding: 0 13px;
+                margin: 2em 0;
+
+                .hero-partner-logo{
+                    max-width: 40px;
+                    vertical-align: baseline;
+                }
+                .hero-partner-name{
+                    color: white;
+                    font-weight: bold;
+                    vertical-align: super;
+                }
+            }
+
+            .hero-text-container{
+                color: white;
+                padding: 0 13px;
+                width: 80%;
+                margin: 3em 0 4em 0;
+
+                h1{
+                    font-weight: normal;
+                    margin: 0;
+                }
+            }
+        }
+        .hero-right-wrapper{
+            position: relative;
+            top: 10em;
+            right: 8em;
+            .hero-cta-container{
+                background: #0069e3; /* Old browsers */
+                background: -moz-linear-gradient(bottom, #0069e3 0%, #80c3f3 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(bottom, #0069e3 0%,#80c3f3 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to top, #0069e3 0%,#80c3f3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0069e3', endColorstr='#80c3f3',GradientType=0 ); /* IE6-9 */
+                border: 1px solid white;
+                color: white;
+                padding: 0.5em 1.8em;
+
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+}
