@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26148",
 "files": {
+	"\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/404.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -45,6 +52,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/scss\/_accessibility.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/scss\/_adcs.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/_adcs.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -114,6 +134,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/css\/scss\/_faq.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/_faq.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/css\/scss\/_font-face.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -162,6 +195,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/scss\/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/scss\/_hero.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/_hero.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -244,6 +290,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/css\/scss\/_modal-banner.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/_modal-banner.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/css\/scss\/_not-found.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -266,6 +325,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/scss\/_pages-posts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/scss\/_partner-bottom-nav.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/_partner-bottom-nav.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -344,6 +416,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/scss\/_tags-share.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/scss\/_value-prop.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/_value-prop.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2586,6 +2671,13 @@
 		"oAP": "\/page.php",
 		"oF": 0
 		},
+	"\/partner-landing.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/partner-landing.php",
+		"oF": 0
+		},
 	"\/readme.txt": {
 		"cB": 0,
 		"ft": 8192,
@@ -2720,6 +2812,27 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/template-parts\/content.php",
+		"oF": 0
+		},
+	"\/template-parts\/partner-article_detail_content.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/partner-article_detail_content.php",
+		"oF": 0
+		},
+	"\/template-parts\/partner-bottom_nav.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/partner-bottom_nav.php",
+		"oF": 0
+		},
+	"\/template-parts\/partner-modal_banner.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/partner-modal_banner.php",
 		"oF": 0
 		}
 	},
