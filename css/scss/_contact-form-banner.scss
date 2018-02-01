@@ -1,4 +1,4 @@
-.ModalBannerContainer{
+.ContactFormBannerContainer{
     background: url(https://fmcnaqa1.wpengine.com/wp-content/uploads/2018/02/LP-banner-bg.png) 0 0 no-repeat;
     background-size: cover;
     height: 100%;
@@ -9,24 +9,45 @@
     z-index: 1;
     padding: 65px 70px 65px;
     margin-top: 40px;
-    .ArticleModal {
+    .ContactFormCont {
         width:666px;
         height:358px;
         background-color:rgba(0,33,96,.8);
-        padding:35px;
-        h2{
+        padding:15px 35px 10px;
+        float: right;
+        h3{
             font-family:"Lato", sans-serif;
             text-transform:uppercase;
             font-size:30px;
             line-height:36px;
+            text-align:center;
+            margin:10px auto 20px;
         }
         p{
             font-size:18px;
-            line-height:26px;
+            line-height:22px;
             font-family:"Lato", sans-serif;
+            text-align:center;
+        }
+        .row{
+            width:100%;
+            margin-top:15px;
+            .r1c1, .r1c2, .r2c1, .r2c2 {
+                width:50%;
+                float:left;
+                padding-left:30px;
+            }
+            label {
+                width:50%;
+                font-size:16px;
+                line-height:19px;
+                font-family:"Lato", sans-serif;
+            }
+            input {width:100%;}
         }
         .hero-cta-container{
             width:35%;
+            margin:35px auto;
             font-family:"Lato", sans-serif;
             font-size:20px;
             font-weight:bold;
@@ -45,6 +66,7 @@
             a{
                 color: white;
             }
-        }        
+        }
+        
     }
 }

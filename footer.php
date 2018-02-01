@@ -12,7 +12,12 @@
 ?>
 
 	</div><!-- #content -->
-
+    <div class="legal-section">
+        <div class="legal-section-inner-wrapper">
+            <h3>Legal Section</h3>
+            <p>A posuere scelerisque gravida facilisi parturient magna urna donec parturient per augue a amet quam nullam a ad a. Parturient velit imperdiet in suspendisse.</p>
+        </div>
+    </div>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
                 <div class="footer-row-container">

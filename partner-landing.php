@@ -39,31 +39,31 @@ get_header(); ?>
                         <div class="value-prop-card">
                             <h3>VALUE PROPOSITION #1</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <a href="#">Learn More ></a>
+                            <a href="#">Learn more ></a>
                             <div id="border"></div>
                         </div>
                         <div class="value-prop-card">
                             <h3>VALUE PROPOSITION #2</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <a href="#">Learn More ></a>
+                            <a href="#">Learn more ></a>
                             <div id="border"></div>
                         </div>
                         <div class="value-prop-card">
                             <h3>VALUE PROPOSITION #3</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <a href="#">Learn More ></a>
+                            <a href="#">Learn more ></a>
                             <div id="border"></div>
                         </div>
                         <div class="value-prop-card">
                             <h3>VALUE PROPOSITION #4</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <a href="#">Learn More ></a>
+                            <a href="#">Learn more ></a>
                         </div>
                     </div>
                 </div>
                 <?php get_template_part('template-parts/partner','article_detail_content'); ?>
                 <?php get_template_part('template-parts/partner','modal_banner'); ?>
-                <div class="faq">
+                <div class="faq row">
                     <div class="faq-inner-wrapper">
                         <div class="faq-header-wrapper">
                             <h3>Frequently Asked Questions</h3>
@@ -72,13 +72,13 @@ get_header(); ?>
                         <div class="faq-snip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
                         <div class="faq-questions-wrapper">
                             <div class="faq-question-item">
-                                <a href="#" class="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt?</a>
+                                <p class="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt?</p>
                             </div>
                             <div class="faq-question-item">
-                                <a href="#" class="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt?</a>
+                                <p class="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt?</p>
                             </div>
                             <div class="faq-question-item">
-                                <a href="#" class="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt?</a>
+                                <p class="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt?</p>
                             </div>
                         </div>
                         <div class="more-faq-wrapper">
@@ -86,6 +86,7 @@ get_header(); ?>
                         </div>
                     </div>
                 </div>
+                <?php get_template_part('template-parts/partner','contact_form_banner'); ?>
             </main><!-- #main -->
         </div><!-- #primary -->
     </div>

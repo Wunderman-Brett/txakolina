@@ -8,13 +8,29 @@
         text-transform: uppercase;
         width: 60%;
         position: relative;
+        .partner-bottom-nav-title {
+            font-size:30px;
+            line-height:36px;
+        }
         .divider{
                 position: absolute;
                 bottom: 0;
                 left: 44%;
                 right: 40%;
                 width: 13%;
-                border-bottom: 1px solid #003D99;
+                border-bottom: 2px solid #003D99;
+        }
+        .partner-bottom-nav-snip{
+            font-size:18px;
+            line-height:22px;
+        }
+    }
+
+    .partner-bottom-nav-element-inner-wrapper {
+        padding:15px 0;
+        h4 {
+            max-height:40px;
+            height:100vh;
         }
     }
     &-title{
@@ -63,23 +79,24 @@
 }
 
 .partner-social{
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid #003D99;
+    border-bottom: 1px solid #003D99;
     display: block;
     margin: 0 auto;
     padding: 2em 0;
     text-align: center;
-
-    &-inner-wrapper{
+    &-inner-wrapper {
 
     }
     &-cta-text{
-
+        font-size:24px;
+        line-height:29px;
+        font-family:"Lato",sans-serif;
     }
     &-icon-wrapper{
         display: block;
         margin: 0 auto;
-        width: 20%;
+        width: 15%;
 
         @include clearfix();
 
@@ -105,7 +122,11 @@
         margin-top: 2em;
 
         .social-share-text{
-            vertical-align: super;
+            position: relative;
+            top: -15px;
+            font-size: 15px;
+            line-height: 18px;
+            font-family:"Lato",sans-serif;
         }
         .social-share-icon-wrapper{
             
@@ -139,9 +160,22 @@
 }
 .legal-section{
     background-color: #F5F5F5;
+    height:100%;
 
     &-inner-wrapper{
         margin: 0 auto;
-        width: 90%;
+        width: 65%;
+        padding:10px 0;
+        h3 {
+            font-size:20px;
+            line-height:24px;
+            font:"lato",sans-serif;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size:15px;
+            line-height:18px;
+            font:"lato",sans-serif;
+        }
     }
 }

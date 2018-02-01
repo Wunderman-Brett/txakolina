@@ -7,7 +7,10 @@
             position: relative;
             padding: 0.5em 0;
             h3{
-                margin: 0.5em 0;
+                margin: 1.5em 0 .4em;
+                text-transform: uppercase;
+                font-size:30px;
+                line-height:36px;
             }
             .divider{
                 position: absolute;
@@ -15,13 +18,17 @@
                 left: 44%;
                 right: 40%;
                 width: 13%;
-                border-bottom: 1px solid #003D99;
+                border-bottom: 2px solid #003D99;
             }
         }
         .faq-snip{
             text-align: center;
-            width: 75%;
+            width: 60%;
             margin: 1em auto;
+            font-size:18px;
+            line-height:28px;
+            color:#313945;
+
         }
         .faq-questions-wrapper{
             margin: 2em auto;
@@ -30,8 +37,13 @@
             .faq-question-item{
                 float: right;
                 width: 33%;
-                padding: 0 2em;
-
+                padding: 0 1em;
+                .question{
+                    margin:0 15px 12.5px;
+                    color:#13275A;
+                    font-size:18px;
+                    line-height:28px;                    
+                }
                 &:last-child{
                     padding: 0 0 0 2em;
                 }
@@ -43,6 +55,7 @@
                 display: block;
                 float: right;
                 font-weight: bold;
+                padding-right:6%;
             }
         }
     }

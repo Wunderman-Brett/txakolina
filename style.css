@@ -7439,13 +7439,25 @@ object {
   text-transform: uppercase;
   width: 60%;
   position: relative; }
+  .partner-bottom-nav-header-wrapper .partner-bottom-nav-title {
+    font-size: 30px;
+    line-height: 36px; }
   .partner-bottom-nav-header-wrapper .divider {
     position: absolute;
     bottom: 0;
     left: 44%;
     right: 40%;
     width: 13%;
-    border-bottom: 1px solid #003D99; }
+    border-bottom: 2px solid #003D99; }
+  .partner-bottom-nav-header-wrapper .partner-bottom-nav-snip {
+    font-size: 18px;
+    line-height: 22px; }
+
+.partner-bottom-nav .partner-bottom-nav-element-inner-wrapper {
+  padding: 15px 0; }
+  .partner-bottom-nav .partner-bottom-nav-element-inner-wrapper h4 {
+    max-height: 40px;
+    height: 100vh; }
 
 .partner-bottom-nav-title {
   text-align: center;
@@ -7490,16 +7502,20 @@ object {
     width: 80%; }
 
 .partner-social {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #003D99;
+  border-bottom: 1px solid #003D99;
   display: block;
   margin: 0 auto;
   padding: 2em 0;
   text-align: center; }
+  .partner-social-cta-text {
+    font-size: 24px;
+    line-height: 29px;
+    font-family: "Lato",sans-serif; }
   .partner-social-icon-wrapper {
     display: block;
     margin: 0 auto;
-    width: 20%; }
+    width: 15%; }
     .partner-social-icon-wrapper:before, .partner-social-icon-wrapper:after {
       content: " ";
       display: table; }
@@ -7529,7 +7545,11 @@ object {
   float: right;
   margin-top: 2em; }
   .social-share-inner-wrapper .social-share-text {
-    vertical-align: super; }
+    position: relative;
+    top: -15px;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: "Lato",sans-serif; }
   .social-share-inner-wrapper .social-share-text, .social-share-inner-wrapper .social-share-icon-wrapper {
     display: inline-block; }
   .social-share-inner-wrapper .divider {
@@ -7551,10 +7571,21 @@ object {
       margin-top: 1em; }
 
 .legal-section {
-  background-color: #F5F5F5; }
+  background-color: #F5F5F5;
+  height: 100%; }
   .legal-section-inner-wrapper {
     margin: 0 auto;
-    width: 90%; }
+    width: 65%;
+    padding: 10px 0; }
+    .legal-section-inner-wrapper h3 {
+      font-size: 20px;
+      line-height: 24px;
+      font: "lato",sans-serif;
+      margin-bottom: 20px; }
+    .legal-section-inner-wrapper p {
+      font-size: 15px;
+      line-height: 18px;
+      font: "lato",sans-serif; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -7750,6 +7781,11 @@ footer {
     .value-prop-inner-wrapper .value-prop-card p {
       padding: 25px 0;
       margin: 0; }
+    .value-prop-inner-wrapper .value-prop-card a {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: bold;
+      font-family: "Lato",sans-serif; }
 
 .ArticleContentContainer {
   display: flex;
@@ -7812,19 +7848,25 @@ footer {
   position: relative;
   padding: 0.5em 0; }
   .faq-inner-wrapper .faq-header-wrapper h3 {
-    margin: 0.5em 0; }
+    margin: 1.5em 0 .4em;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px; }
   .faq-inner-wrapper .faq-header-wrapper .divider {
     position: absolute;
     bottom: 0;
     left: 44%;
     right: 40%;
     width: 13%;
-    border-bottom: 1px solid #003D99; }
+    border-bottom: 2px solid #003D99; }
 
 .faq-inner-wrapper .faq-snip {
   text-align: center;
-  width: 75%;
-  margin: 1em auto; }
+  width: 60%;
+  margin: 1em auto;
+  font-size: 18px;
+  line-height: 28px;
+  color: #313945; }
 
 .faq-inner-wrapper .faq-questions-wrapper {
   margin: 2em auto;
@@ -7837,7 +7879,12 @@ footer {
   .faq-inner-wrapper .faq-questions-wrapper .faq-question-item {
     float: right;
     width: 33%;
-    padding: 0 2em; }
+    padding: 0 1em; }
+    .faq-inner-wrapper .faq-questions-wrapper .faq-question-item .question {
+      margin: 0 15px 12.5px;
+      color: #13275A;
+      font-size: 18px;
+      line-height: 28px; }
     .faq-inner-wrapper .faq-questions-wrapper .faq-question-item:last-child {
       padding: 0 0 0 2em; }
 
@@ -7846,10 +7893,11 @@ footer {
   .faq-inner-wrapper .more-faq-wrapper .more-faq-link {
     display: block;
     float: right;
-    font-weight: bold; }
+    font-weight: bold;
+    padding-right: 6%; }
 
 .ModalBannerContainer {
-  background: url(http://vccw.test/wp-content/uploads/2018/01/LP-Hero.jpg) 0 0 no-repeat;
+  background: url(https://fmcnaqa1.wpengine.com/wp-content/uploads/2018/02/LP-banner-bg.png) 0 0 no-repeat;
   background-size: cover;
   height: 100%;
   max-height: 480px;
@@ -7862,8 +7910,7 @@ footer {
   .ModalBannerContainer .ArticleModal {
     width: 666px;
     height: 358px;
-    background-color: #002160;
-    opacity: .8;
+    background-color: rgba(0, 33, 96, 0.8);
     padding: 35px; }
     .ModalBannerContainer .ArticleModal h2 {
       font-family: "Lato", sans-serif;
@@ -7896,4 +7943,72 @@ footer {
       color: white;
       padding: 0.5em 1.8em; }
       .ModalBannerContainer .ArticleModal .hero-cta-container a {
+        color: white; }
+
+.ContactFormBannerContainer {
+  background: url(https://fmcnaqa1.wpengine.com/wp-content/uploads/2018/02/LP-banner-bg.png) 0 0 no-repeat;
+  background-size: cover;
+  height: 100%;
+  max-height: 480px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  z-index: 1;
+  padding: 65px 70px 65px;
+  margin-top: 40px; }
+  .ContactFormBannerContainer .ContactFormCont {
+    width: 666px;
+    height: 358px;
+    background-color: rgba(0, 33, 96, 0.8);
+    padding: 15px 35px 10px;
+    float: right; }
+    .ContactFormBannerContainer .ContactFormCont h3 {
+      font-family: "Lato", sans-serif;
+      text-transform: uppercase;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      margin: 10px auto 20px; }
+    .ContactFormBannerContainer .ContactFormCont p {
+      font-size: 18px;
+      line-height: 22px;
+      font-family: "Lato", sans-serif;
+      text-align: center; }
+    .ContactFormBannerContainer .ContactFormCont .row {
+      width: 100%;
+      margin-top: 15px; }
+      .ContactFormBannerContainer .ContactFormCont .row .r1c1, .ContactFormBannerContainer .ContactFormCont .row .r1c2, .ContactFormBannerContainer .ContactFormCont .row .r2c1, .ContactFormBannerContainer .ContactFormCont .row .r2c2 {
+        width: 50%;
+        float: left;
+        padding-left: 30px; }
+      .ContactFormBannerContainer .ContactFormCont .row label {
+        width: 50%;
+        font-size: 16px;
+        line-height: 19px;
+        font-family: "Lato", sans-serif; }
+      .ContactFormBannerContainer .ContactFormCont .row input {
+        width: 100%; }
+    .ContactFormBannerContainer .ContactFormCont .hero-cta-container {
+      width: 35%;
+      margin: 35px auto;
+      font-family: "Lato", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 24px;
+      text-align: center;
+      opacity: 1;
+      background: #0069e3;
+      /* Old browsers */
+      background: -moz-linear-gradient(bottom, #0069e3 0%, #80c3f3 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(bottom, #0069e3 0%, #80c3f3 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to top, #0069e3 0%, #80c3f3 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0069e3', endColorstr='#80c3f3',GradientType=0 );
+      /* IE6-9 */
+      border: 1px solid white;
+      color: white;
+      padding: 0.5em 1.8em; }
+      .ContactFormBannerContainer .ContactFormCont .hero-cta-container a {
         color: white; }
