@@ -3,7 +3,7 @@
  Theme Name: txakolina
  Author: Peter Mumford
  Description: Fork of Simona by Pasquale Bucci
- Version: 0.6.5
+ Version: 0.7.9
  License: GNU General Public License v2 or later
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain: txakolina
@@ -1242,6 +1242,8 @@ h2, .h2 {
 @media (min-width: 768px) {
   h1.entry-title, h1.page-title, .h1.entry-title, .h1.page-title {
     font-size: 56px; }
+    h1.entry-title.smaller, h1.page-title.smaller, .h1.entry-title.smaller, .h1.page-title.smaller {
+      font-size: 38px; }
   h2, .h2 {
     font-size: 28px; } }
 
@@ -2074,8 +2076,8 @@ table {
   background-color: transparent; }
 
 caption {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: #777777;
   text-align: left; }
 
@@ -2092,7 +2094,7 @@ th {
   .table > tbody > tr > td,
   .table > tfoot > tr > th,
   .table > tfoot > tr > td {
-    padding: 8px;
+    padding: 12px;
     line-height: 1.6;
     vertical-align: top;
     border-top: 1px solid #ddd; }
@@ -5890,25 +5892,28 @@ button.close {
 # Elements
 --------------------------------------------------------------*/
 blockquote {
-  font-family: 'Playfair Display';
   font-size: 18px;
   font-style: italic;
-  width: 100%;
-  margin: 0.25em 0;
-  padding: 0.25em 40px;
-  line-height: 1.625;
+  margin-top: 20px;
+  padding: 0 30px 0.25em 40px;
   position: relative;
-  color: #9b9b9b; }
-
-blockquote:before {
-  display: block;
-  content: "\f10d";
-  font-family: 'FontAwesome';
-  font-size: 30px;
-  position: absolute;
-  left: 0;
-  top: -10px;
-  opacity: 0.6; }
+  color: #737373;
+  border-width: 0;
+  left: -40px; }
+  blockquote:before, blockquote:after {
+    font-family: Georgia;
+    color: #656565;
+    font-size: 70px;
+    position: absolute;
+    line-height: 20px; }
+  blockquote:before {
+    content: "\201c";
+    left: 0;
+    top: 15px; }
+  blockquote:after {
+    content: "\201d";
+    right: 0;
+    bottom: -10px; }
 
 blockquote cite {
   color: #dcdcdc;
@@ -6024,6 +6029,24 @@ a:active {
   float: right;
   text-align: right;
   width: 50%; }
+
+.btn-cta, .btn-primary {
+  background-color: #0075d4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#249dff), to(#0075d4));
+  background-image: linear-gradient(#249dff 0%, #0075d4 100%);
+  color: #eee;
+  text-transform: uppercase;
+  border-radius: 0;
+  border-width: 0;
+  font-family: "HelveticaNeue";
+  letter-spacing: 1px;
+  font-size: 15px;
+  -webkit-transition: all 0.33s ease;
+  transition: all 0.33s ease; }
+  .btn-cta:hover, .btn-primary:hover {
+    color: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#41a9fe), to(#249dff));
+    background-image: linear-gradient(#41a9fe 0%, #249dff 100%); }
 
 #overlay {
   -webkit-transition: all 0.35s ease-in-out;
@@ -6198,237 +6221,24 @@ a:active {
   display: none; }
 
 .widget {
-  font-size: 14px;
   -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  line-height: 1.2;
+      -ms-hyphens: auto;
+          hyphens: auto;
   margin-bottom: 60px;
+  font-weight: 300;
   width: 100%;
   word-wrap: break-word;
-  color: #737373; }
-
-.widget a {
-  color: #9b9b9b; }
-
-.widget a:hover {
-  opacity: 0.6; }
-
-.widget h1,
-.widget h2,
-.widget h3,
-.widget h4,
-.widget h5,
-.widget h6 {
-  margin: 24px 0 12px; }
-
-.widget h1 {
-  font-size: 22px;
-  line-height: 1.2; }
-
-.widget h2 {
-  font-size: 20px;
-  line-height: 1.2; }
-
-.widget h3 {
-  font-size: 18px;
-  line-height: 1.3; }
-
-.widget h4 {
-  font-size: 16px;
-  line-height: 1.5; }
-
-.widget h5 {
-  font-size: 14px;
-  line-height: 1.7; }
-
-.widget h6 {
-  font-size: 12px;
-  line-height: 2; }
-
-.widget address {
-  margin-bottom: 18px; }
-
-.widget abbr[title] {
-  border-color: #9b9b9b; }
-
-.widget pre,
-.widget fieldset {
-  border-color: #9b9b9b; }
-
-.widget code,
-.widget kbd,
-.widget tt,
-.widget var,
-.widget samp,
-.widget pre {
-  font-size: 12px;
-  line-height: 1.5; }
-
-.widget blockquote {
-  color: #9b9b9b;
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 18px; }
-
-.widget blockquote cite {
-  color: #dcdcdc;
-  font-size: 14px;
-  line-height: 1.28; }
-
-.widget dl,
-.widget dd {
-  margin-bottom: 18px; }
-
-.widget ul,
-.widget ol {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-.widget li > ol,
-.widget li > ul {
-  margin-left: 10px; }
-
-.widget table,
-.widget th,
-.widget td {
-  border-color: #9b9b9b; }
-
-.widget table {
-  margin-bottom: 18px; }
-
-.widget del {
-  color: #9b9b9b; }
-
-.widget hr {
-  background-color: #9b9b9b; }
-
-.widget p {
-  margin-bottom: 18px; }
-
-.widget select {
-  margin-bottom: 18px;
-  color: #737373; }
-
-.widget-area {
-  padding-left: 5%; }
-
-@media (max-width: 991px) {
-  .widget-area {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #dcdcdc;
-    margin-top: 60px;
-    padding-top: 60px;
-    padding-left: 0; } }
-
-.widget .wp-caption {
-  color: #9b9b9b;
-  margin-bottom: 18px; }
-
-.widget .widget-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  line-height: 1.72;
-  margin: 0 0 24px 0;
-  text-transform: uppercase; }
-
-.widget-title,
-.widget-title a {
-  color: #737373; }
-
-.widget-title a:hover {
-  opacity: 0.6; }
-
-.widget_calendar table {
-  font-size: 90%;
-  line-height: 2;
-  margin: 0; }
-
-.widget_calendar caption {
   color: #737373;
-  font-weight: 400;
-  line-height: 1.72;
-  margin-bottom: 18px;
-  text-align: left;
-  text-transform: uppercase; }
-
-.widget_calendar thead th {
-  background-color: transparent; }
-
-.widget_calendar tbody td,
-.widget_calendar thead th {
-  text-align: center; }
-
-.widget_calendar tbody a {
-  background-color: transparent;
-  border: 1px solid #9b9b9b;
-  color: #737373;
-  display: block; }
-
-.widget_calendar tbody a:hover {
-  opacity: 0.6; }
-
-.widget_calendar #prev {
-  padding-left: 5px; }
-
-.widget_calendar #next {
-  padding-right: 5px;
-  text-align: right; }
-
-.widget_archive li,
-.widget_categories li,
-.widget_links li,
-.widget_meta li,
-.widget_nav_menu li,
-.widget_pages li,
-.widget_recent_comments li,
-.widget_recent_entries li {
-  border-top: 1px dotted #dcdcdc;
-  padding: 12px 0 14px; }
-
-.widget_archive li:first-child,
-.widget_categories li:first-child,
-.widget_links li:first-child,
-.widget_meta li:first-child,
-.widget_nav_menu li:first-child,
-.widget_pages li:first-child,
-.widget_recent_comments li:first-child,
-.widget_recent_entries li:first-child {
-  border-top: 0; }
-
-.widget_categories li ul,
-.widget_nav_menu li ul,
-.widget_pages li ul {
-  border-top: 1px solid #dcdcdc;
-  margin-top: 12px; }
-
-.widget_categories li li:last-child,
-.widget_nav_menu li li:last-child,
-.widget_pages li li:last-child {
-  padding-bottom: 0; }
-
-.widget_recent_entries .post-date {
-  display: block; }
-
-.rsswidget img {
-  margin-top: -4px; }
-
-.rssSummary {
-  margin: 12px 0; }
-
-.rss-date {
-  display: block; }
-
-.widget_rss li {
-  margin-bottom: 20px; }
-
-.widget_rss li:last-child {
-  margin-bottom: 0; }
-
-.widget_text > div > :last-child {
-  margin-bottom: 0; }
+  background-color: #f6f6f6; }
+  .widget-content {
+    padding: 0 15px 15px; }
+  .widget-title {
+    font-weight: 700;
+    font-stretch: expanded;
+    font-size: 20px;
+    color: #454545; }
+  .widget .btn {
+    width: 100%; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -6440,15 +6250,31 @@ a:active {
 #main {
   margin-top: 35px; }
 
-.entry-content p {
-  max-width: 850px; }
-
-.entry-content ul {
-  padding-left: 17px;
-  margin: 15px 0; }
-
-.entry-content li {
-  margin-bottom: 5px; }
+.entry-content {
+  font-weight: 300; }
+  .entry-content strong, .entry-content b {
+    color: #444; }
+  .entry-content p {
+    max-width: 850px;
+    color: #737373;
+    overflow: hidden; }
+  .entry-content ul, .entry-content ol {
+    max-width: 850px;
+    color: #737373;
+    padding-left: 17px;
+    margin: 15px 0;
+    overflow: hidden; }
+  .entry-content li {
+    margin-bottom: 5px; }
+  .entry-content blockquote {
+    max-width: 850px; }
+  .entry-content table {
+    color: #333333;
+    font-size: 14px;
+    font-weight: normal; }
+    .entry-content table li, .entry-content table p {
+      font-size: 14px;
+      color: #333333; }
 
 .entry-small-text {
   margin: 40px 0;
@@ -6647,6 +6473,48 @@ a:active {
 .required {
   font-size: 16px; }
 
+.cta-block {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  background-color: #dcdcdc; }
+  .cta-block .btn {
+    padding-left: 45px;
+    padding-right: 45px; }
+  .cta-block .phoneCall {
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
+    text-align: right; }
+    .cta-block .phoneCall a {
+      font-weight: normal; }
+
+@media (max-width: 768px) {
+  .cta-block {
+    display: block;
+    text-align: center;
+    padding-top: 20px; }
+    .cta-block .phoneCall, .cta-block .btn {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 300px;
+      margin-top: 10px; } }
+
+.tabs-wrapper {
+  margin: 25px 0; }
+
 /**
  * Categories & author.
  */
@@ -6816,18 +6684,6 @@ a:active {
   text-align: center;
   font-size: 20px;
   color: white; }
-
-iframe[src*="mixcloud"] {
-  max-height: 120px;
-  max-width: 100%;
-  width: 100%;
-  margin: 0; }
-
-iframe[src*="soundcloud"] {
-  max-height: 240px;
-  max-width: 100%;
-  width: 100%;
-  margin: 0; }
 
 .gallery-caption {
   display: none; }
@@ -7004,7 +6860,6 @@ iframe[src*="soundcloud"] {
 
 .txakolina-ribbon-simple {
   color: #ff4081;
-  font-family: 'Playfair Display';
   font-style: italic;
   text-transform: capitalize;
   float: right; }
@@ -7021,7 +6876,6 @@ iframe[src*="soundcloud"] {
 .txakolina-ribbon {
   background: #ff4081;
   color: white;
-  font-family: 'Playfair Display';
   font-style: italic;
   right: -100px;
   padding: 15px;
@@ -7050,7 +6904,7 @@ iframe[src*="soundcloud"] {
   -webkit-box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.4);
           box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.4); }
   .site-header.affix + .site-content {
-    padding-top: 90px; }
+    padding-top: 115px; }
   .site-header-icons {
     margin: 33px 0 0 15px; }
     .site-header-icons a {
@@ -7060,7 +6914,6 @@ iframe[src*="soundcloud"] {
 
 .site-title {
   color: #202020;
-  font-family: 'Playfair Display', serif;
   font-size: 32px;
   font-weight: 400;
   font-style: italic;
@@ -7075,14 +6928,18 @@ iframe[src*="soundcloud"] {
 
 .site-description {
   position: absolute;
+  text-align: center;
+  line-height: 1.1;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  font-family: "HelveticaNeue";
+  -webkit-transform: translate(-50%, -80%);
+          transform: translate(-50%, -80%);
   color: white;
   margin: 0;
-  font-size: 26px;
-  font-weight: 600;
+  font-size: 56px;
+  font-stretch: expanded;
+  font-weight: 700;
   max-width: 70%;
   word-wrap: break-word;
   z-index: 1000; }
@@ -7464,8 +7321,7 @@ object {
 ## Captions
 --------------------------------------------------------------*/
 .wp-caption {
-  font-size: small;
-  font-style: italic;
+  font-size: 15px;
   max-width: 100%; }
 
 .wp-caption img[class*="wp-image-"] {
@@ -7477,7 +7333,8 @@ object {
   margin: 0.8075em 0; }
 
 .wp-caption-text {
-  text-align: center; }
+  text-align: center;
+  color: #202020; }
 
 /*--------------------------------------------------------------
 ## Galleries
@@ -7531,3 +7388,270 @@ object {
     position: static; }
   .site-header.affix + .site-content {
     padding-top: 0; } }
+
+.page-template-page-liberty body {
+  color: #383838; }
+
+.page-template-page-liberty #page {
+  background-color: transparent; }
+
+.page-template-page-liberty .control-label, .page-template-page-liberty .radio-inline {
+  color: #5a88b8; }
+
+.page-template-page-liberty small {
+  font-size: 85%; }
+
+.page-template-page-liberty .form-control {
+  border-radius: 4px; }
+
+.page-template-page-liberty h1.entry-title {
+  display: none; }
+
+.liberty-branding {
+  position: relative;
+  float: left;
+  margin-right: 60px; }
+  .liberty-branding:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .liberty-branding .wp-caption {
+    padding-top: 45px;
+    font-size: 17px;
+    font-style: normal;
+    line-height: 1.3; }
+    .liberty-branding .wp-caption-text {
+      text-align: left;
+      padding-right: 30px; }
+    .liberty-branding .wp-caption.alignleft {
+      display: block; }
+
+.liberty-intro {
+  font-size: 24px;
+  font-weight: 400;
+  color: #854a74;
+  line-height: 1.2;
+  margin: 0;
+  font-family: "Helvetica Neue", helvetica, sans-serif; }
+
+.liberty-logo {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.liberty-form-container {
+  max-width: 700px;
+  position: relative; }
+
+.liberty-form-header {
+  font-size: 28px;
+  font-weight: 600;
+  color: #854a74;
+  line-height: 1.2;
+  margin: 40px 0 20px;
+  font-family: "Helvetica Neue", helvetica, sans-serif; }
+
+.liberty-tagline {
+  font-family: "Helvetica Neue", helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #8aadd2;
+  margin: 0 0 30px; }
+
+.liberty-features {
+  color: #854a74;
+  font-weight: 700;
+  font-size: 17px;
+  list-style: none;
+  margin-left: 35px;
+  margin-top: 40px; }
+  .liberty-features li {
+    padding-top: 10px;
+    margin-bottom: 15px; }
+
+.liberty-more-info {
+  background: url(/wp-content/themes/fmcna-simona/images/liberty/liberty-swoosh.png) no-repeat right bottom;
+  margin-bottom: 30px;
+  padding-bottom: 1px;
+  position: relative; }
+
+.liberty-call {
+  font-size: 21px;
+  color: #8aadd2; }
+
+.liberty-hr {
+  height: 10px;
+  margin: 0;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  background: #854a74;
+  background: -webkit-gradient(linear, left top, right top, from(#8aadd2), color-stop(50%, #fff4d5), to(#854a74));
+  background: linear-gradient(to right, #8aadd2 0%, #fff4d5 50%, #854a74 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8aadd2', endColorstr='#854a74', GradientType=1 ); }
+
+.liberty-btn {
+  border: 6px solid transparent;
+  position: relative;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#be6da7), to(#854a74)) #854a74;
+  background: linear-gradient(#be6da7, #854a74) #854a74;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{$libertyPurplePale}', endColorstr='{$libertyPurple}', GradientType=0 );
+  background-clip: padding-box;
+  text-transform: none; }
+  .liberty-btn:hover, .liberty-btn:active, .liberty-btn:focus, .liberty-btnhover:focus, .liberty-btn:hover:active {
+    border: 6px solid transparent;
+    position: relative;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    opacity: 1;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e59fd1), to(#be6da7)) #be6da7;
+    background: linear-gradient(#e59fd1, #be6da7) #be6da7;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{$libertyPurplePale}', endColorstr='{$libertyPurple}', GradientType=0 );
+    background-clip: padding-box; }
+  .liberty-btn::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    border-radius: 8px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#854a74), to(#be6da7));
+    background-image: linear-gradient(#854a74, #be6da7);
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px; }
+
+.liberty-icon {
+  background-position: 510px center; }
+  .liberty-icon-arrow {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-arrow.svg");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-arrow.svg', sizingMethod='scale'); }
+  .liberty-icon-flextime {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-flextime.svg");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-flextime.svg', sizingMethod='scale'); }
+  .liberty-icon-drain {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-drain.svg");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-drain.svg', sizingMethod='scale'); }
+  .liberty-icon-sound {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-sound.svg");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-sound.svg', sizingMethod='scale'); }
+  .liberty-icon-checkmark {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-checkmark.svg");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-checkmark.svg', sizingMethod='scale'); }
+  .liberty-icon-headset {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-headset.svg");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-headset.svg', sizingMethod='scale'); }
+  .liberty-icon-portable {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-portable.svg");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-portable.svg', sizingMethod='scale'); }
+
+.no-svg .liberty-icon-arrow {
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-arrow.png");
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-arrow.png', sizingMethod='scale'); }
+
+.no-svg .liberty-icon-flextime {
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-flextime.png");
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-flextime.png', sizingMethod='scale'); }
+
+.no-svg .liberty-icon-drain {
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-drain.png");
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-drain.png', sizingMethod='scale'); }
+
+.no-svg .liberty-icon-sound {
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-sound.png");
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-sound.png', sizingMethod='scale'); }
+
+.no-svg .liberty-icon-checkmark {
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-checkmark.png");
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-checkmark.png', sizingMethod='scale'); }
+
+.no-svg .liberty-icon-headset {
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-headset.png");
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-headset.png', sizingMethod='scale'); }
+
+.no-svg .liberty-icon-portable {
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-image: url("/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-portable.png");
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/themes/fmcna-simona/images/liberty/liberty-icon-portable.png', sizingMethod='scale'); }
+
+@media (max-width: 992px) {
+  .liberty-branding {
+    float: none;
+    margin: 0; }
+  .liberty-features {
+    margin-top: 0;
+    margin-left: 0; }
+    .liberty-features li {
+      margin-bottom: 10px;
+      padding-left: 60px; }
+  .liberty-icon {
+    background-position: left center; } }
+
+@media (max-width: 768px) {
+  .liberty-icon {
+    background-position: left center; }
+  .liberty-features {
+    margin-left: 0; }
+    .liberty-features li {
+      padding-left: 65px; }
+  .liberty-branding .wp-caption.alignleft {
+    float: none; } }
+
+@media (max-width: 500px) {
+  .liberty-logo {
+    position: relative; }
+  .liberty-hero {
+    margin-top: -30px; }
+  .liberty-branding .wp-caption {
+    padding: 0; } }
+
+.ui-accordion .ui-accordion-content p, .ui-accordion .ui-accordion-content li {
+  font-size: 14px;
+  line-height: 1.6; }
+
+.ui-accordion .ui-accordion-content p {
+  margin-bottom: 10px !important;
+  margin-left: 15px !important; }
+
+.ui-accordion .ui-accordion-content ul {
+  margin-left: 17px; }
+
+.ui-widget-content a {
+  color: #003d99; }

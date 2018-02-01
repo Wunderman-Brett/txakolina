@@ -2,6 +2,8 @@
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+
+
 .widget {
 	margin: 0 0 1.5em;
 }
@@ -17,240 +19,23 @@
 }
 
 .widget {
-	font-size: 14px;
-	-webkit-hyphens: auto;
-	-moz-hyphens:    auto;
-	-ms-hyphens:     auto;
-	hyphens:         auto;
-	line-height: 1.2;
+	hyphens: auto;
 	margin-bottom: 60px;
+	font-weight: 300;
 	width: 100%;
 	word-wrap: break-word;
 	color: $grey-73;
-}
-.widget a {
-	color: $grey-9b;
-}
-.widget a:hover {
-	opacity: 0.6;
-}
-.widget h1,
-.widget h2,
-.widget h3,
-.widget h4,
-.widget h5,
-.widget h6 {
-	margin: 24px 0 12px;
-}
-.widget h1 {
-	font-size: 22px;
-	line-height: 1.2;
-}
-.widget h2 {
-	font-size: 20px;
-	line-height: 1.2;
-}
-.widget h3 {
-	font-size: 18px;
-	line-height: 1.3;
-}
-.widget h4 {
-	font-size: 16px;
-	line-height: 1.5;
-}
-.widget h5 {
-	font-size: 14px;
-	line-height: 1.7;
-}
-.widget h6 {
-	font-size: 12px;
-	line-height: 2;
-}
-.widget address {
-	margin-bottom: 18px;
-}
-.widget abbr[title] {
-	border-color: $grey-9b;
-}
-.widget pre,
-.widget fieldset {
-	border-color: $grey-9b;
-}
-.widget code,
-.widget kbd,
-.widget tt,
-.widget var,
-.widget samp,
-.widget pre {
-	font-size: 12px;
-	line-height: 1.5;
-}
-.widget blockquote {
-	color: $grey-9b;
-	font-size: 18px;
-	line-height: 1.5;
-	margin-bottom: 18px;
-}
-.widget blockquote cite {
-	color: $grey-dc;
-	font-size: 14px;
-	line-height: 1.28;
-}
-.widget dl,
-.widget dd {
-	margin-bottom: 18px;
-}
-.widget ul,
-.widget ol {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-.widget li > ol,
-.widget li > ul {
-	margin-left: 10px;
-}
-.widget table,
-.widget th,
-.widget td {
-	border-color: $grey-9b;
-}
-.widget table {
-	margin-bottom: 18px;
-}
-.widget del {
-	color: $grey-9b;
-}
-.widget hr {
-	background-color: $grey-9b;
-}
-.widget p {
-	margin-bottom: 18px;
-}
-.widget select {
-	margin-bottom: 18px;
-	color: $grey-73;
-}
-
-.widget-area {
-	padding-left: 5%;
-}
-@media (max-width: 991px) {
-	.widget-area {
-		border-width: 1px;
-		border-style: solid;
-		border-color: $grey-dc;
-		margin-top: 60px;
-		padding-top: 60px;
-		padding-left: 0;
+	background-color: $off-white;
+	&-content {
+		padding: 0 15px 15px;
 	}
-}
-
-.widget .wp-caption {
-	color: $grey-9b;
-	margin-bottom: 18px;
-}
-.widget .widget-title {
-	font-family: 'Playfair Display', serif;
-	font-size: 16px;
-	line-height: 1.72;
-	margin: 0 0 24px 0;
-	text-transform: uppercase;
-}
-.widget-title,
-.widget-title a {
-	color: $grey-73;
-}
-.widget-title a:hover {
-	opacity: 0.6;
-}
-.widget_calendar table {
-	font-size: 90%;
-	line-height: 2;
-	margin: 0;
-}
-.widget_calendar caption {
-	color: $grey-73;
-	font-weight: 400;
-	line-height: 1.72;
-	margin-bottom: 18px;
-	text-align: left;
-	text-transform: uppercase;
-}
-.widget_calendar thead th {
-	background-color: transparent;
-}
-.widget_calendar tbody td,
-.widget_calendar thead th {
-	text-align: center;
-}
-.widget_calendar tbody a {
-	background-color: transparent;
-	border: 1px solid $grey-9b;
-	color: $grey-73;
-	display: block;
-}
-.widget_calendar tbody a:hover {
-	opacity: 0.6;
-}
-.widget_calendar #prev {
-	padding-left: 5px;
-}
-.widget_calendar #next {
-	padding-right: 5px;
-	text-align: right;
-}
-.widget_archive li,
-.widget_categories li,
-.widget_links li,
-.widget_meta li,
-.widget_nav_menu li,
-.widget_pages li,
-.widget_recent_comments li,
-.widget_recent_entries li {
-	border-top: 1px dotted $grey-dc;
-	padding: 12px 0 14px;
-}
-.widget_archive li:first-child,
-.widget_categories li:first-child,
-.widget_links li:first-child,
-.widget_meta li:first-child,
-.widget_nav_menu li:first-child,
-.widget_pages li:first-child,
-.widget_recent_comments li:first-child,
-.widget_recent_entries li:first-child {
-	border-top: 0;
-}
-
-.widget_categories li ul,
-.widget_nav_menu li ul,
-.widget_pages li ul {
-	border-top: 1px solid $grey-dc;
-	margin-top: 12px;
-}
-.widget_categories li li:last-child,
-.widget_nav_menu li li:last-child,
-.widget_pages li li:last-child {
-	padding-bottom: 0;
-}
-.widget_recent_entries .post-date {
-	display: block;
-}
-.rsswidget img {
-	margin-top: -4px;
-}
-.rssSummary {
-	margin: 12px 0;
-}
-.rss-date {
-	display: block;
-}
-.widget_rss li {
-	margin-bottom: 20px;
-}
-.widget_rss li:last-child {
-	margin-bottom: 0;
-}
-.widget_text > div > :last-child {
-	margin-bottom: 0;
+	&-title {
+		font-weight: 700;
+		font-stretch: expanded;
+		font-size: 20px;
+		color: #454545;
+	}
+	.btn {
+		width: 100%;
+	}
 }

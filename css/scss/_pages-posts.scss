@@ -10,15 +10,36 @@
 }
 .entry {
 	&-content {
+		font-weight: 300;
+		strong, b {
+			color: #444;
+		}
 		p {
 			max-width: 850px;
+			color: $grey-73;
+			overflow: hidden;
 		}
-		ul {
+		ul, ol {
+			max-width: 850px;
+			color: $grey-73;
 			padding-left: 17px;
 			margin: 15px 0;
+			overflow: hidden;
 		}
 		li {
 			margin-bottom: 5px;
+		}
+		blockquote {
+			max-width: 850px;
+		}
+		table {
+			color: $gray-dark;
+			font-size: 14px;
+			font-weight: normal;
+			li, p {
+				font-size: 14px;
+				color: $gray-dark;
+			}
 		}
 	}
 	&-small-text {
@@ -256,4 +277,45 @@
 }
 .required {
 	font-size:16px;
+}
+
+.cta-block {
+	color: black;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px;
+	background-color: $grey-dc;
+	.btn {
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+	.phoneCall {
+		flex-basis: 300px;
+		text-align: right;
+		a {
+			font-weight: normal;
+		}
+	}
+}
+@media (max-width: $screen-sm) {
+	.cta-block {
+		display: block;
+		text-align: center;
+		padding-top: 20px;
+		.phoneCall, .btn {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			max-width: 300px;
+			margin-top: 10px;
+		}
+	}
+}
+
+.tabs {
+	&-wrapper {
+		margin: 25px 0;
+	}
 }

@@ -1,5 +1,6 @@
 <?php
 /**
+ * Template Name: Page with tabs
  *
  * @package txakolina
  */
@@ -14,7 +15,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php get_template_part( 'template-parts/content', 'tabs' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
 

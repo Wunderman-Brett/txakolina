@@ -114,8 +114,7 @@ object {
 ## Captions
 --------------------------------------------------------------*/
 .wp-caption {
-	font-size: small;
-	font-style: italic;
+	font-size: 15px;
 	max-width: 100%;
 }
 
@@ -131,6 +130,7 @@ object {
 
 .wp-caption-text {
 	text-align: center;
+	color: $grey-20;
 }
 
 /*--------------------------------------------------------------

@@ -68,3 +68,20 @@ a:active {
 	text-align: right;
 	width: 50%;
 }
+
+.btn-cta, .btn-primary {
+	background-color: #0075d4;
+	background-image: linear-gradient(#249dff 0%, #0075d4 100%);
+	color: #eee;
+	text-transform: uppercase;
+	border-radius: 0;
+	border-width: 0;
+	font-family: "HelveticaNeue";
+	letter-spacing: 1px;
+	font-size: 15px;
+	transition: all 0.33s ease;
+	&:hover {
+		color: white;
+		background-image: linear-gradient(#41a9fe 0%, #249dff 100%);
+	}
+}

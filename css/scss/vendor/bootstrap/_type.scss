@@ -68,6 +68,9 @@ h2, .h2 {
     &.entry-title,
     &.page-title {
       font-size: 56px;
+      &.smaller {
+        font-size: 38px;
+      }
     }
   }
   h2, .h2 {

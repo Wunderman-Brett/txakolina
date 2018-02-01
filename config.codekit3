@@ -179,6 +179,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/css\/scss\/_liberty-cycler.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/_liberty-cycler.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/css\/scss\/_links.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -253,6 +266,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/scss\/_pages-posts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/scss\/_plugins-overrides.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/scss\/_plugins-overrides.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1843,11 +1869,46 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/inc\/custom-fields.php": {
+	"\/inc\/custom-fields-callouts.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/inc\/custom-fields.php",
+		"oAP": "\/inc\/custom-fields-callouts.php",
+		"oF": 0
+		},
+	"\/inc\/custom-fields-front-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/custom-fields-front-page.php",
+		"oF": 0
+		},
+	"\/inc\/custom-fields-global.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/custom-fields-global.php",
+		"oF": 0
+		},
+	"\/inc\/custom-fields-liberty.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/custom-fields-liberty.php",
+		"oF": 0
+		},
+	"\/inc\/custom-fields-pages.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/custom-fields-pages.php",
+		"oF": 0
+		},
+	"\/inc\/custom-fields-tabs.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/custom-fields-tabs.php",
 		"oF": 0
 		},
 	"\/inc\/customizer.php": {
@@ -2497,11 +2558,25 @@
 		"oAP": "\/languages\/simona.pot",
 		"oF": 0
 		},
+	"\/page-liberty.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-liberty.php",
+		"oF": 0
+		},
 	"\/page-sidebar.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/page-sidebar.php",
+		"oF": 0
+		},
+	"\/page-tabs.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-tabs.php",
 		"oF": 0
 		},
 	"\/page.php": {
@@ -2591,11 +2666,46 @@
 		"oAP": "\/template-parts\/content-post-nav.php",
 		"oF": 0
 		},
+	"\/template-parts\/content-sections\/full-width-callout.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-sections\/full-width-callout.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-sections\/half-width-callout.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-sections\/half-width-callout.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-sections\/hero.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-sections\/hero.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-sections\/main-content.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-sections\/main-content.php",
+		"oF": 0
+		},
 	"\/template-parts\/content-single.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/template-parts\/content-single.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-tabs.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-tabs.php",
 		"oF": 0
 		},
 	"\/template-parts\/content-video.php": {
