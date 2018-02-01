@@ -8,6 +8,7 @@
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain: txakolina
  */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i");
 @font-face {
   font-family: 'HelveticaNeue';
   src: url("./fonts/45Ligh/88fcd49a-13c7-4d0c-86b1-ad1e258bd75d.eot?");
@@ -6907,7 +6908,7 @@ iframe[src*="soundcloud"] {
   clear: both; }
 
 header.hero {
-  background: rgba(14, 37, 90, 0.4) url("http://vccw.test/wp-content/uploads/2018/01/LP-Hero.png") 0 0 no-repeat;
+  background: rgba(14, 37, 90, 0.4) url("https://fmcnaqa1.wpengine.com/wp-content/uploads/2018/01/ncp-home-hero@2x.png") 0 0 no-repeat;
   background-size: cover;
   height: 100%;
   overflow: hidden;
@@ -6931,6 +6932,7 @@ header.hero {
     z-index: 2; }
   header.hero .hero-wrapper {
     margin: 0 auto;
+    min-height: 20em;
     position: relative;
     width: 90%;
     z-index: 9; }
@@ -6950,6 +6952,9 @@ header.hero {
       header.hero .hero-wrapper .hero-left-wrapper .hero-logo-container {
         padding: 0 13px;
         margin: 2em 0; }
+        header.hero .hero-wrapper .hero-left-wrapper .hero-logo-container .hero-partner-logo {
+          max-width: 40px;
+          vertical-align: baseline; }
         header.hero .hero-wrapper .hero-left-wrapper .hero-logo-container .hero-partner-name {
           color: white;
           font-weight: bold;
@@ -6958,20 +6963,21 @@ header.hero {
         color: white;
         padding: 0 13px;
         width: 80%;
-        margin: 2em 0 4em 0; }
+        margin: 3em 0 4em 0; }
         header.hero .hero-wrapper .hero-left-wrapper .hero-text-container h1 {
           font-weight: normal;
           margin: 0; }
     header.hero .hero-wrapper .hero-right-wrapper {
       position: relative;
-      top: 8em;
+      top: 10em;
       right: 8em; }
       header.hero .hero-wrapper .hero-right-wrapper .hero-cta-container {
         background: #0069e3;
         /* Old browsers */
+        background: -moz-linear-gradient(bottom, #0069e3 0%, #80c3f3 100%);
         /* FF3.6-15 */
+        background: -webkit-linear-gradient(bottom, #0069e3 0%, #80c3f3 100%);
         /* Chrome10-25,Safari5.1-6 */
-        background: -webkit-gradient(linear, left bottom, left top, from(#0069e3), to(#80c3f3));
         background: linear-gradient(to top, #0069e3 0%, #80c3f3 100%);
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0069e3', endColorstr='#80c3f3',GradientType=0 );
@@ -7429,19 +7435,27 @@ object {
 --------------------------------------------------------------*/
 .partner-bottom-nav-header-wrapper {
   margin: 0 auto;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   text-transform: uppercase;
-  width: 60%; }
+  width: 60%;
+  position: relative; }
+  .partner-bottom-nav-header-wrapper .divider {
+    position: absolute;
+    bottom: 0;
+    left: 44%;
+    right: 40%;
+    width: 13%;
+    border-bottom: 1px solid #003D99; }
 
 .partner-bottom-nav-title {
-  text-align: center; }
-  .partner-bottom-nav-title span {
-    border-bottom: 1px solid black;
-    display: inline-block;
-    padding-bottom: 20px; }
+  text-align: center;
+  margin-bottom: 0; }
 
 .partner-bottom-nav-snip {
-  text-align: center; }
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2em 0; }
 
 .partner-bottom-nav-wrapper {
   margin-bottom: 4em; }
@@ -7450,6 +7464,9 @@ object {
     display: table; }
   .partner-bottom-nav-wrapper:after {
     clear: both; }
+
+.partner-bottom-nav .parnter-bottom-nav-snip {
+  text-align: center; }
 
 .partner-bottom-nav-element {
   float: left;
@@ -7488,6 +7505,8 @@ object {
       display: table; }
     .partner-social-icon-wrapper:after {
       clear: both; }
+    .partner-social-icon-wrapper img {
+      max-width: 60px; }
   .partner-social-icon-left {
     float: left; }
     .partner-social-icon-left:before, .partner-social-icon-left:after {
@@ -7732,17 +7751,28 @@ footer {
       padding: 25px 0;
       margin: 0; }
 
-
 .ArticleContentContainer {
   display: flex;
   flex-direction: row; }
   .ArticleContentContainer .adcs-col0 {
-    width: 75%; }
+    width: 75%;
+    margin: 40px 10px 0;
+    padding: 30px; }
+    .ArticleContentContainer .adcs-col0 h2 {
+      text-transform: Uppercase;
+      font-family: "Lato", sans-serif;
+      font-size: 30px;
+      line-height: 36px; }
+    .ArticleContentContainer .adcs-col0 p {
+      font-family: "Lato", sans-serif;
+      font-size: 18px;
+      line-height: 24px; }
   .ArticleContentContainer .adcs-col1 {
     width: 25%;
     text-align: center;
-    padding: 20px;
-    margin-top: 30px; }
+    margin: 40px 10px 0;
+    padding: 30px;
+    border-left: 1px solid #003D99; }
     .ArticleContentContainer .adcs-col1 .quoteCont {
       width: 100%; }
       .ArticleContentContainer .adcs-col1 .quoteCont img.first-quote {
@@ -7750,16 +7780,30 @@ footer {
         position: relative;
         top: -20px; }
       .ArticleContentContainer .adcs-col1 .quoteCont p {
-        width: 71%;
-        margin: 0 auto; }
+        width: 95%;
+        margin: 0 auto;
+        color: #13275A;
+        font-family: "Lato", sans-serif;
+        font-style: italic;
+        font-size: 22px;
+        line-height: 26px; }
       .ArticleContentContainer .adcs-col1 .quoteCont img.last-quote {
         float: right;
         position: relative;
-        top: -20px; }
+        top: -20px;
+        z-index: -1; }
     .ArticleContentContainer .adcs-col1 .bioCont {
       text-align: center; }
       .ArticleContentContainer .adcs-col1 .bioCont img {
         margin: 0 auto; }
+      .ArticleContentContainer .adcs-col1 .bioCont p.drName {
+        font-size: 18px;
+        line-height: 22px; }
+      .ArticleContentContainer .adcs-col1 .bioCont a {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        /* bold */ }
 
 .faq-inner-wrapper .faq-header-wrapper {
   text-align: center;
@@ -7804,3 +7848,52 @@ footer {
     float: right;
     font-weight: bold; }
 
+.ModalBannerContainer {
+  background: url(http://vccw.test/wp-content/uploads/2018/01/LP-Hero.jpg) 0 0 no-repeat;
+  background-size: cover;
+  height: 100%;
+  max-height: 480px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  z-index: 1;
+  padding: 65px 70px 65px;
+  margin-top: 40px; }
+  .ModalBannerContainer .ArticleModal {
+    width: 666px;
+    height: 358px;
+    background-color: #002160;
+    opacity: .8;
+    padding: 35px; }
+    .ModalBannerContainer .ArticleModal h2 {
+      font-family: "Lato", sans-serif;
+      text-transform: uppercase;
+      font-size: 30px;
+      line-height: 36px; }
+    .ModalBannerContainer .ArticleModal p {
+      font-size: 18px;
+      line-height: 26px;
+      font-family: "Lato", sans-serif; }
+    .ModalBannerContainer .ArticleModal .hero-cta-container {
+      width: 35%;
+      font-family: "Lato", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 24px;
+      text-align: center;
+      opacity: 1;
+      background: #0069e3;
+      /* Old browsers */
+      background: -moz-linear-gradient(bottom, #0069e3 0%, #80c3f3 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(bottom, #0069e3 0%, #80c3f3 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to top, #0069e3 0%, #80c3f3 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0069e3', endColorstr='#80c3f3',GradientType=0 );
+      /* IE6-9 */
+      border: 1px solid white;
+      color: white;
+      padding: 0.5em 1.8em; }
+      .ModalBannerContainer .ArticleModal .hero-cta-container a {
+        color: white; }
