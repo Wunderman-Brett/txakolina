@@ -61,6 +61,8 @@ get_header(); ?>
                         </div>
                     </div>
                 </div>
+                <?php get_template_part('template-parts/partner','article_detail_content'); ?>
+                <?php get_template_part('template-parts/partner','modal_banner'); ?>
                 <div class="faq">
                     <div class="faq-inner-wrapper">
                         <div class="faq-header-wrapper">
@@ -88,8 +90,7 @@ get_header(); ?>
         </div><!-- #primary -->
     </div>
 
-    <?php get_template_part('template-parts/partner','article_detail_content'); ?>
-    <?php get_template_part('template-parts/partner','modal_banner'); ?>
+
     <?php get_template_part('template-parts/partner','bottom_nav'); ?>
 </div>
 <?php get_footer(); ?>
